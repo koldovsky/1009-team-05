@@ -1,25 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="wrapper">
-        <header data-include="partials/header.partial.html">
-        </header>
+        <div class="header__container">
+            <header data-include="partials/header.partial.html">
+            </header>
+            <div class="header__title">Contacts
+            </div>
+        </div>
         <div class="main">
-            
+            <div class="main__container">
+                <div class="main__info info">
+                    <div class="info__card">
+                        <div class="info__icon"></div>
+                        <div class="info__underIcon"></div>
+                        <div class="info__description"></div>
+                    </div>
+                    <div class="info__card">
+                        <div class="info__icon"></div>
+                        <div class="info__underIcon"></div>
+                        <div class="info__description"></div>
+                    </div>
+                    <div class="info__card">
+                        <div class="info__icon"></div>
+                        <div class="info__underIcon"></div>
+                        <div class="info__description"></div>
+                    </div>
+                    <div class="info__card">
+                        <div class="info__icon"></div>
+                        <div class="info__underIcon"></div>
+                        <div class="info__description"></div>
+                    </div>
+                </div>
+                <div class="main__section">
+
+                    <div class="main__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10294.481157363469!2d24.036388435937486!3d49.83080145692316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add68c80560f5%3A0x87995e6415d6d177!2z0J_QsNC8J9GP0YLQvdC40Log0JzQuNGF0LDQudC70L7QstGWINCT0YDRg9GI0LXQstGB0YzQutC-0LzRgw!5e0!3m2!1suk!2sua!4v1683457563273!5m2!1suk!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="main__modalform modalform">
+                        <div class="modalform__header">
+                            <div class="modalform__title"></div>
+                            <div class="modalform__subtitle"></div>
+                        </div>
+                        <div class="modalform__info">
+                            <div class="modalform__inputs"><input type="text" placeholder="Your Name"></div>
+                            <div class="modalform__inputs"><input type="number" placeholder="Phone number"></div>
+                            <div class="modalform__inputs"><input type="email" placeholder="Email"></div>
+                            <div class="modalform__inputs"><input type="text" placeholder="Type your message"></div>
+                        </div>
+                        <div class="modalform__button ">
+                            <div class="button__wrapper">
+                                <button type="submit">Send a Message</button>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
         <div class="footer">
+            <div class="footer__container">
+
+
+
+            </div>
 
         </div>
     </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10294.481157363469!2d24.036388435937486!3d49.83080145692316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add68c80560f5%3A0x87995e6415d6d177!2z0J_QsNC8J9GP0YLQvdC40Log0JzQuNGF0LDQudC70L7QstGWINCT0YDRg9GI0LXQstGB0YzQutC-0LzRgw!5e0!3m2!1suk!2sua!4v1683457563273!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
+
 </html>
