@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page | Ice Cream Cafe</title>
+    <link rel="shortcut icon" href="image/header/icecream.png" type="image/x-icon">
     <style>
         body {
             background-color: gainsboro;
@@ -14,41 +15,7 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="header__menu">
-                <li class="header__menu-items">
-                    <a href="partials/about.partial.html" class="header__menu-link">About us</a>
-                </li>
-                <li class="header__menu-items">
-                    <a href="#" class="header__menu-link">Menu</a>
-                </li>
-                <li>
-                    <a href="#" class="special">Special</a>
-                </li>
-            </ul>
-            <div class="header__logo">
-                <a href="partials/about.partial.html" class="header__logo-image">
-                    <img width="129" src="image/about/logo2.svg" alt="logo2" class="header__logo-image">
-                </a>
-            </div>
-            <ul>
-                <li>
-                    <a href="#" class="header__menu-link">Ingredients</a>
-                </li>
-                <li>
-                    <a href="#" class="header__menu-link">Blog</a>
-                </li>
-                <li>
-                    <a href="#" class="header__menu-link">Contacts</a>
-                </li>
-            </ul>
-
-        </nav>
-        <div class="about__page-head">
-            <h1 class="about__page-name">About Us</h1>
-        </div>
-    </header> -->
+    <header data-include="partials/header.partial.html"></header>
     <main class="about__content">
         <div class="about__page-head">
             <h1 class="about__page-name">About Us</h1>
@@ -89,14 +56,12 @@
                     friends or familly.</p>
             </div>
             <div class="about__content-advantages-reservation">
-                <img width="40" src="image/about/reservation.svg"
-                    alt="about__content-advantages-reservation-picture">
+                <img width="40" src="image/about/reservation.svg" alt="about__content-advantages-reservation-picture">
                 <h3 class="about__content-advantages-reservation-name">Table Reservation</h3>
                 <p class="about__content-advantages-reservation-description"> Dozens of types of ice cream made from
                     natural ingredients.</p>
                 <div class="about__content-advantages-delicious">
-                    <img width="40" src="image/about/delicious.svg"
-                        alt="about__content-advantages-delicious-picture">
+                    <img width="40" src="image/about/delicious.svg" alt="about__content-advantages-delicious-picture">
                     <h3 class="about__content-advantages-delicious-name">Delicious Ice Cream</h3>
                     <p class="about__content-advantages-delicious-description"> Dozens of types of ice cream made from
                         natural ingredients.</p>
@@ -124,17 +89,21 @@
             <div class="about__content-team-description">
                 <h4 class="about__content-team-description-staff">Our staff</h4>
                 <h1 class="about__content-team-description-team">Meet Our Team</h1>
-                <h5 class="about__content-team-description-description">Our staff is our pride. We are happy to welcome new members of our family.</h5>
+                <h5 class="about__content-team-description-description">Our staff is our pride. We are happy to welcome
+                    new members of our family.</h5>
                 <p class="about__content-team-description-description">
-                    Our main qualities are respect for customers, cheerfulness, and willingness to work hard to provide the best service for cafe guests.
+                    Our main qualities are respect for customers, cheerfulness, and willingness to work hard to provide
+                    the best service for cafe guests.
                 </p>
             </div>
             <div><button disabled="disabled"></button></div>
             <section class="about__content-team-cards">
-                
+
             </section>
         </div>
     </main>
+    <footer data-include="partials/footer.partial.html"></footer>
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 
 </html>
