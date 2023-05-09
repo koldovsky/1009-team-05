@@ -15,9 +15,10 @@
         .about__content-conclusion-faq {
             cursor: pointer;
         }
-       .about__content-video {
-        background-image: url("image/about/background_for_video.png");
-       }
+
+        .about__content-video {
+            background-image: url("image/about/background_for_video.png");
+        }
     </style>
 
 </head>
@@ -149,19 +150,19 @@
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
     <script>
         // Fetch all the details element.
-const details = document.querySelectorAll("details");
+        const details = document.querySelectorAll("details");
 
-// Add the onclick listeners.
-details.forEach((targetDetail) => {
-  targetDetail.addEventListener("click", () => {
-    // Close all the details that are not targetDetail.
-    details.forEach((detail) => {
-      if (detail !== targetDetail) {
-        detail.removeAttribute("open");
-      }
-    });
-  });
-});
+        // Add the onclick listeners.
+        details.forEach((targetDetail) => {
+            targetDetail.addEventListener("click", () => {
+                // Close all the details that are not targetDetail.
+                details.forEach((detail) => {
+                    if (detail !== targetDetail) {
+                        detail.removeAttribute("open");
+                    }
+                });
+            });
+        });
     </script>
 </body>
 
