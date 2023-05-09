@@ -6,12 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts Page | Ice Cream Cafe</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
+
+    <header class="header--contacts">
+        <nav data-include="partials/header.partial.html"></nav>
+        <div class="header__title header__title--contacts">
+            <h2 class="header__contacts">Contacts</h2>
+        </div>
+    </header>
+
     <div class="wrapper">
-        <header data-include="partials/contacts.header.partial.html">
-        </header>
+
+
         <div class="main">
             <div class="main__container container">
                 <div class="main__info info">
@@ -50,7 +59,8 @@
                     <div class="main__modalform modalform">
                         <div class="modalform__header">
                             <div class="modalform__title">Hit Us Up!</div>
-                            <div class="modalform__subtitle">Fill out the form below and we'll contact you as soon as we can.</div>
+                            <div class="modalform__subtitle">Fill out the form below and we'll contact you as soon as we
+                                can.</div>
                         </div>
                         <div class="modalform__info">
                             <div class="modalform__inputs"><input type="text" placeholder="Your Name"></div>
