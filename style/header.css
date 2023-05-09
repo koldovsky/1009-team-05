@@ -1,4 +1,12 @@
-.header {
+.header--index {
     background-image: url("../image/header/header-bg.png");
     background-size: 100%;
+}
+
+.header--about-us {
+    background-color: #a55376;
+}
+
+.header--contacts {
+    background-color: #ffc452;
 }
