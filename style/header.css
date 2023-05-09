@@ -1,3 +1,7 @@
+.header__logo {
+    width: 129px;
+}
+
 .header--index {
     background-image: url("../image/header/header-bg.png");
     background-size: 100%;
