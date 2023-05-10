@@ -35,3 +35,11 @@ header {
 .header__menu-cell {
     padding: 24px;
 }
+
+.header__title {
+    text-align: center;
+}
+
+.header__title--index {
+    text-align: unset;
+}
