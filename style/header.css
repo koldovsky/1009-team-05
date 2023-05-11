@@ -1,3 +1,8 @@
+.header {
+    color: #ffffff;
+    padding: 30px 0px;
+}
+
 .header__logo {
     width: 129px;
 }
@@ -11,6 +16,37 @@
     background-color: #a55376;
 }
 
+.header--menu {
+    background-color: #537398;
+}
+
 .header--contacts {
     background-color: #ffc452;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-cell {
+    padding: 24px;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.header__title--index {
+    text-align: unset;
+}
+
+.header__menu-cell .header__menu-link:hover {
+    border-bottom: 3px solid #a55376;
 }
