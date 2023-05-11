@@ -19,6 +19,19 @@
         .about__content-video {
             background-image: url("image/about/background_for_video.png");
         }
+
+        a.about__content-team-button {
+            appearance: button;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 12px;
+            border-radius: 20px;
+        }
+        .about__content-team-carousel {
+
+        }
+
     </style>
 
 </head>
@@ -87,7 +100,7 @@
                 Sorry, your browser can not play this video.
             </video>
         </div>
-        <div class="about__content-team">
+        <section class="about__content-team">
             <div class="about__content-team-description">
                 <h5 class="about__content-team-description-staff">Our staff</h5>
                 <h1 class="about__content-team-description-title">Meet Our Team</h1>
@@ -98,12 +111,36 @@
                     the best service for cafe guests.
                 </p>
             </div>
-            <div>
-                <button disabled="disabled">Send SV</button>
+            <div class="about__content-team-button">
+                <a href="contacts.html" class="about__content-team-button">Send CV</a>
+
             </div>
-            <section class="about__content-team-cards">
-                <h2>Tomas Jackson</h2>
-            </section>
+            <div class="about__content-team-carousel">
+                <div class="about__content-team-carousel-card">
+                    <div>
+                        <img class="about__content-team-carousel-card-photo" src="image/about/card_tomas.png"
+                            alt="Tomas Jackson">
+
+                    </div>
+                    <p class="about__content-team-carousel-card-name">Tomas Jackson</p>
+                </div>
+
+                <div class="about__content-team-carousel-card">
+                    <div>
+                        <img class="about__content-team-carousel-card-photo" src="image/about/card_eloise.png"
+                            alt="Eloise Birkenstone">
+                    </div>
+                    <p class="about__content-team-carousel-card-name">Eloise Birkenstone</p>
+                </div>
+                <div class="about__content-team-carousel-card">
+                    <div>
+                        <img class="about__content-team-carousel-card-photo" src="image/about/card_jane.png"
+                            alt="Jane Woss">
+                    </div>
+                    <p class="about__content-team-carousel-card-name">Jane Woss</p>
+                </div>
+
+            </div>
         </section>
         <section class="about__content-conclusion">
             <h2 class="about__content-conclusion-title">
@@ -116,7 +153,7 @@
                 Our employees do everything to make you feel as comfortable as possible so that you can have a great
                 time in the cafe or quickly buy your favorite ice cream in one of our stores.
             </p>
-            <div class="about__content-conclusion-faq">
+            <div class="about__content-conclusion-faq accordion">
                 <details class="about__content-conclusion-faq-possibility">
                     <summary class="about__content-conclusion-faq-question">Is it possible to throw a party at your
                         cafe?</summary>
@@ -143,11 +180,11 @@
                 </details>
                 <hr>
             </div>
-        </div>
+        </section>
     </main>
     <footer data-include="partials/footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script>
+    <script class="accordion">
         // Fetch all the details element.
         const details = document.querySelectorAll("details");
 
