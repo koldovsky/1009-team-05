@@ -30,10 +30,6 @@
     justify-content: space-between;
 }
 
-.header__hamburger-menu {
-
-}
-
 .header__menu {
     display: none;
 }
@@ -56,4 +52,14 @@
 
 .header__owner {
     font-size: 80px;
+}
+
+@media(min-width:992px) {
+    .header__hamburger-menu {
+        display: none;
+    }
+
+    .header__menu {
+        display: flex;
+    }
 }
