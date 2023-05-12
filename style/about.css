@@ -19,3 +19,10 @@ a.about__content-team-button {
     padding: 12px;
     border-radius: 20px;
 }
+.about__content-conclusion-faq {
+    cursor: pointer;
+}
+
+.about__content-video {
+    background-image: url("image/about/background_for_video.png");
+}
