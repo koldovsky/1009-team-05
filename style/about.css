@@ -1,5 +1,6 @@
 .about__content {
     color:var(--main-text-color);
+    background-color: var(--background-color-about);
 }
 
 .about__content-introduction-title{
