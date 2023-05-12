@@ -4,6 +4,7 @@
 
 .header__index {
     background-image: url("../images/header/header-bg.png");
+    background-repeat: no-repeat;
     background-size: 100%;
     color: var(--main-text-color);
     padding: 30px 0px;
@@ -11,25 +12,30 @@
 
 .header__about-us {
     background-color: var(--additional-color-about);
+    color: var(--main-text-color);
 }
 
 .header__menu-page {
     background-color: var(--additional-color-menu);
+    color: var(--main-text-color);
 }
 
 .header__contacts {
     background-color: var(--additional-color-contacts);
+    color: var(--main-text-color);
 }
 
 .header__nav {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0px auto;
+}
+
+.header__hamburger-menu {
+
 }
 
 .header__menu {
-    display: flex;
+    display: none;
 }
 
 .header__menu-cell {
@@ -37,7 +43,6 @@
 }
 
 .header__title {
-    color: var(--main-text-color);
     font-size: 48px;
 }
 
