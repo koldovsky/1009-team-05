@@ -1,26 +1,23 @@
-.header {
-    color: var(--main-text-color);
-    padding: 30px 0px;
-}
-
 .header__logo {
     width: 129px;
 }
 
-.header--index {
+.header__index {
     background-image: url("../images/header/header-bg.png");
     background-size: 100%;
+    color: var(--main-text-color);
+    padding: 30px 0px;
 }
 
-.header--about-us {
+.header__about-us {
     background-color: var(--additional-color-about);
 }
 
-.header--menu {
+.header__menu {
     background-color: var(--additional-color-menu);
 }
 
-.header--contacts {
+.header__contacts {
     background-color: var(--additional-color-contacts);
 }
 
@@ -42,27 +39,6 @@
 .header__title {
     color: var(--main-text-color);
     font-size: 48px;
-}
-
-.header__title--index {
-    margin: 225px auto;
-    width: 1200px;
-
-}
-
-.header__title--about-us {
-    text-align: center;
-    margin: 100px auto;
-}
-
-.header__title--menu {
-    text-align: center;
-    margin: 100px auto;
-}
-
-.header__title--contacts {
-    text-align: center;
-    margin: 100px auto;
 }
 
 .header__menu-cell .header__menu-link:hover {
