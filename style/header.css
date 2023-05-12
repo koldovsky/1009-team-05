@@ -1,5 +1,6 @@
-header {
-    padding: 30px 200px;
+.header {
+    color: #ffffff;
+    padding: 30px 0px;
 }
 
 .header__logo {
@@ -26,6 +27,8 @@ header {
 .header__nav {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px auto;
 }
 
 .header__menu {
@@ -34,4 +37,42 @@ header {
 
 .header__menu-cell {
     padding: 24px;
+}
+
+.header__title {
+    color: #ffffff;
+    font-size: 48px;
+}
+
+.header__title--index {
+    margin: 225px auto;
+    width: 1200px;
+
+}
+
+.header__title--about-us {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.header__title--menu {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.header__title--contacts {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.header__menu-cell .header__menu-link:hover {
+    border-bottom: 3px solid #a55376;
+}
+
+.header__welcome {
+    font-size: 21px;
+}
+
+.header__owner {
+    font-size: 80px;
 }

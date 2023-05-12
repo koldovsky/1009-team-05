@@ -1,0 +1,28 @@
+.about__content {
+    color:var(--main-text-color);
+    background-color: var(--background-color-about);
+}
+
+.about__content-introduction-title{
+    font-family: 'Dangrek', cursive;
+}
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    color: rgb(224,221,221);
+}
+a.about__content-team-button {
+    appearance: button;
+    font-family: 'Dangrek', cursive;
+    text-decoration: none;
+    color: var(--main-text-color);
+    background-color:var(--additional-color-about);
+    padding: 12px;
+    border-radius: 20px;
+}
+.about__content-conclusion-faq {
+    cursor: pointer;
+}
+
+.about__content-video {
+    background-image: url("image/about/background_for_video.png");
+}
