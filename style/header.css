@@ -27,7 +27,7 @@
 .header__nav {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
@@ -40,13 +40,39 @@
 }
 
 .header__title {
-    text-align: center;
+    color: #ffffff;
+    font-size: 48px;
 }
 
 .header__title--index {
-    text-align: unset;
+    margin: 225px auto;
+    width: 1200px;
+
+}
+
+.header__title--about-us {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.header__title--menu {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.header__title--contacts {
+    text-align: center;
+    margin: 100px auto;
 }
 
 .header__menu-cell .header__menu-link:hover {
     border-bottom: 3px solid #a55376;
+}
+
+.header__welcome {
+    font-size: 21px;
+}
+
+.header__owner {
+    font-size: 80px;
 }
