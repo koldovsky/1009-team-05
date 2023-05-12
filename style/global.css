@@ -1,11 +1,23 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
 /* font-family: 'Dangrek', cursive; */
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 /* font-family: 'Source Sans 3', sans-serif; */
 
 :root {
---main-text-color:white;
---background-color-about: #b87390;
---additional-color-about:#a55376;
+    --main-text-color: white;
+    --background-color-about: #b87390;
+    --additional-color-about: #a55376;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
