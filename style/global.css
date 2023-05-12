@@ -7,6 +7,15 @@
     --main-text-color: white;
     --background-color-about: #b87390;
     --additional-color-about: #a55376;
+
+    --background-color-menu: #6382a7;
+    --additional-color-menu: #537398;
+
+    --background-color-contacts: #f8b83d;
+    --additional-color-contacts: #ffc452;
+
+    --header-menu-link: 3px solid #912251;
+
     scroll-behavior: smooth;
 }
 
