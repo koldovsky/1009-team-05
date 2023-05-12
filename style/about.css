@@ -1,0 +1,11 @@
+.about__content {
+    color:var(--main-text-color);
+}
+
+.about__content-introduction-title{
+    font-family: 'Dangrek', cursive;
+}
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    color: rgb(224,221,221);
+}
