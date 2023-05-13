@@ -5,9 +5,13 @@
 .header__index {
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: var(--main-text-color);
-    padding: 30px 0px;
+
+}
+
+.header__main-block {
+    padding: 30px;
 }
 
 .header__about-us {
@@ -27,6 +31,7 @@
 
 .header__nav {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -38,7 +43,14 @@
     padding: 24px;
 }
 
-/*.header__title {}*/
+.header__title {
+    margin: 111px auto 0px;
+    text-align: center;
+}
+
+.header__title--index {
+    text-align: unset;
+}
 
 .header__title--menu,
 .header__title--contacts,
@@ -60,12 +72,22 @@
 
 .header__story {
     font-size: 20px;
+    margin: 30px 0px;
 }
 
-.header__title a {
-    border-radius: 25px;
-    padding: 18px 35px;
+.header__button-block {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.header__button-block a {
+    border-radius: 25px;
+    margin: 10px;
+    padding: 18px 35px;
+    text-align: center;
+    width: 170px;
+}
+
 .header__about-cafe-button {
     background-color: var(--link-button-first-style);
 }
