@@ -38,7 +38,11 @@
     padding: 24px;
 }
 
-.header__title {
+/*.header__title {}*/
+
+.header__title--menu,
+.header__title--contacts,
+.header__title--about-us {
     font-size: 48px;
 }
 
@@ -51,7 +55,23 @@
 }
 
 .header__owner {
-    font-size: 80px;
+    font-size: 58px;
+}
+
+.header__story {
+    font-size: 20px;
+}
+
+.header__title a {
+    border-radius: 25px;
+    padding: 18px 35px;
+}
+.header__about-cafe-button {
+    background-color: var(--link-button-first-style);
+}
+
+.header__our-menu-button {
+    background-color: var(--link-button-second-style);
 }
 
 @media(min-width:992px) {
@@ -61,6 +81,6 @@
 
     .header__menu {
         display: flex;
-        
+
     }
 }
