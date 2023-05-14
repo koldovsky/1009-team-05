@@ -9,6 +9,11 @@
     object-fit: contain;
 }
 
+.menu__name,
+.menu__item__name {
+    font-weight: bold;
+}
+
 .menu__item__name .item__line {
     flex: 1 0 0;
     height: 1px;
