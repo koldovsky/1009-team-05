@@ -78,16 +78,25 @@
 
 .header__button-block {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .header__button-block a,
 .main__booklets-menu-section a {
+    border: 1px solid var(--booklets-menu-background);
     border-radius: 25px;
     margin: 10px;
     padding: 18px 35px;
     text-align: center;
     width: 170px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.header__button-block a:hover,
+.main__booklets-menu-section a:hover {
+    opacity: 0.8;
 }
 
 .header__about-cafe-button {
@@ -102,6 +111,7 @@
 .main__booklets-menu-link--third-style {
     background-color: var(--link-button-third-style);
 }
+
 .main__booklets-menu {
     background-color: var(--booklets-menu-background);
 }
@@ -109,6 +119,7 @@
 .main__main-block-booklets-menu {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     color: var(--main-text-color);
 }
 
@@ -144,6 +155,9 @@
 }
 
 @media(min-width: 767px) {
+    .header__button-block {
+        justify-content: left;
+    }
     .main__main-block-booklets-menu {
         flex-direction: row;
         flex-wrap: wrap;
@@ -155,8 +169,6 @@
 }
 
 @media(min-width:992px) {
-    .header__index {}
-
     .header__hamburger-menu {
         display: none;
     }
