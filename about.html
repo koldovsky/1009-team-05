@@ -8,12 +8,13 @@
     <title>About Page | Ice Cream Cafe</title>
     <link rel="shortcut icon" href="images/header/icecream.png" type="images/x-icon">
     <link rel="stylesheet" href="style/index.css">
-
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/about.js" defer></script>
 </head>
 
 <body>
     <header class="header header__about-us">
-        <div class="header__main-block">
+        <div class="header__main-block container">
             <nav data-include="partials/header.partial.html"></nav>
             <div class="header__title header__title--about-us">
                 <h2 class="header__on-about-us">About Us</h2>
@@ -92,31 +93,23 @@
                 <a href="contacts.html" class="about__content-team-button">Send CV</a>
 
             </div>
-            <div class="about__content-team-carousel">
-                <div class="about__content-team-carousel-card">
-                    <div>
-                        <img class="about__content-team-carousel-card-photo" src="images/about/card_tomas.png"
-                            alt="Tomas Jackson">
-
-                    </div>
-                    <p class="about__content-team-carousel-card-name">Tomas Jackson</p>
-                </div>
-
-                <div class="about__content-team-carousel-card">
-                    <div>
-                        <img class="about__content-team-carousel-card-photo" src="images/about/card_eloise.png"
-                            alt="Eloise Birkenstone">
-                    </div>
-                    <p class="about__content-team-carousel-card-name">Eloise Birkenstone</p>
-                </div>
-                <div class="about__content-team-carousel-card">
-                    <div>
-                        <img class="about__content-team-carousel-card-photo" src="images/about/card_jane.png"
-                            alt="Jane Woss">
-                    </div>
-                    <p class="about__content-team-carousel-card-name">Jane Woss</p>
-                </div>
-
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_tomas.png" alt="Tomas Jackson" draggable="false"></div>
+                    <span>Tomas Jackson</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_eloise.png" alt="Eloise Birkenstone" draggable="false"></div>
+                    <span>Eloise Birkenstone</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_jane.png" alt="Jane Woss" draggable="false"></div>
+                    <span>Jane Woss</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
         </section>
         <section class="about__content-conclusion">

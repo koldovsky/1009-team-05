@@ -47,6 +47,7 @@
 .header__title {
     margin: 111px auto 0px;
     text-align: center;
+    font-size: 34px;
 }
 
 .header__title--index {
@@ -54,28 +55,22 @@
     text-shadow: var(--drop-violet-shadow);
 }
 
-.header__title--menu,
-.header__title--contacts,
-.header__title--about-us {
-    font-size: 48px;
-}
-
 .header__menu-cell .header__menu-link:hover {
     border-bottom: var(--header-menu-link);
     transition: 0.5s;
 }
 .header__welcome {
-    font-size: 21px;
+    font-size: 1.2em;
     color: var(--main-text-color);
     /* temporary option */
 }
 
 .header__owner {
-    font-size: 58px;
+    font-size: 2em;
 }
 
 .header__story {
-    font-size: 20px;
+    font-size: 0.7em;
     margin: 30px 0px;
     color: var(--main-text-color);
     /* temporary option */
@@ -83,23 +78,38 @@
 
 .header__button-block {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.header__button-block a {
+.header__button-block a,
+.main__booklets-menu-section a {
+    border: 1px solid var(--booklets-menu-background);
     border-radius: 25px;
     margin: 10px;
     padding: 18px 35px;
     text-align: center;
     width: 170px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.header__button-block a:hover,
+.main__booklets-menu-section a:hover {
+    opacity: 0.8;
 }
 
 .header__about-cafe-button {
     background-color: var(--link-button-first-style);
 }
 
-.header__our-menu-button {
+.header__our-menu-button,
+.main__booklets-menu-link--second-style {
     background-color: var(--link-button-second-style);
+}
+
+.main__booklets-menu-link--third-style {
+    background-color: var(--link-button-third-style);
 }
 
 .main__booklets-menu {
@@ -109,10 +119,14 @@
 .main__main-block-booklets-menu {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    color: var(--main-text-color);
 }
 
 .main__booklets-menu-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
@@ -135,25 +149,22 @@
 }
 
 .main__booklets-menu-deserts {
+    margin: 32px 0;
     color: var(--main-text-color);
     font-size: 30px;
 }
 
-
-
 @media(min-width: 767px) {
+    .header__button-block {
+        justify-content: left;
+    }
     .main__main-block-booklets-menu {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .main__booklets-menu-section {
         flex-basis: 45%;
-    }
-}
-
-@media(min-width:930px) {
-    .header__title--index {
-        text-shadow: none;
     }
 }
 
@@ -163,8 +174,20 @@
     }
 
     .main__booklets-menu-section {
-        flex-basis: unset;
+        flex-basis: 30%;
         flex-grow: 1;
+    }
+
+    .header__title {
+        font-size: 2.5em;
+    }
+
+    .header__title--index {
+        margin: 7vw 0;
+    }
+
+    .header__button-block {
+        margin: 7vw 0;
     }
 
     .header__menu {

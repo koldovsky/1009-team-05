@@ -1,10 +1,8 @@
 @import "reset.css";
 @import "global.css";
-@import "variables.css";
 @import "header.css";
 @import "footer.css";
 @import "about.css";
 @import "contacts.css";
 @import "menu.css";
-
-
+@import "ice-cream.css";
