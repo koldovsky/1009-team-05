@@ -1,0 +1,23 @@
+.menu__item__name,
+.booklets-menu__item {
+    display: flex;
+    align-items: center;
+}
+
+.item__pic {
+    max-height: 65px;
+    object-fit: contain;
+}
+
+.menu__name,
+.menu__item__name {
+    font-weight: bold;
+}
+
+.menu__item__name .item__line {
+    flex: 1 0 0;
+    height: 1px;
+    background: var(--additional-color-menu);
+    min-width: 10px;
+    align-self: end;
+}

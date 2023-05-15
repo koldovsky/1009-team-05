@@ -6,41 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page | Ice Cream Cafe</title>
-    <link rel="shortcut icon" href="image/header/icecream.png" type="image/x-icon">
-    <style>
-        body {
-            background-color: #b87390;
-        }
-
-        .about__content-conclusion-faq {
-            cursor: pointer;
-        }
-
-        .about__content-video {
-            background-image: url("image/about/background_for_video.png");
-        }
-
-        a.about__content-team-button {
-            appearance: button;
-            text-decoration: none;
-            color: white;
-            background-color: black;
-            padding: 12px;
-            border-radius: 20px;
-        }
-        .about__content-team-carousel {
-
-        }
-
-    </style>
-
+    <link rel="shortcut icon" href="images/header/icecream.png" type="images/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/about.js" defer></script>
 </head>
 
 <body>
-    <header class="about__header">
-        <nav data-include="partials/header.partial.html"></nav>
-        <div class="header__title header__title--about-us">
-            <h2 class="header__about-us">About Us</h2>
+    <header class="header header__about-us">
+        <div class="header__main-block container">
+            <nav data-include="partials/header.partial.html"></nav>
+            <div class="header__title header__title--about-us">
+                <h2 class="header__on-about-us">About Us</h2>
+            </div>
         </div>
     </header>
     <main class="about__content">
@@ -68,25 +46,25 @@
         </article>
         <section class="about__content-advantages">
             <div class="about__content-advantages-delicious">
-                <img width="40" src="image/about/delicious.svg" alt="about__content-advantages-delicious-picture">
+                <img width="40" src="images/about/delicious.svg" alt="about__content-advantages-delicious-picture">
                 <h3 class="about__content-advantages-delicious-title">Delicious Ice Cream</h3>
                 <p class="about__content-advantages-delicious-description"> Dozens of types of ice cream made from
                     natural ingredients.</p>
             </div>
             <div class="about__content-advantages-atmosphere">
-                <img width="40" src="image/about/atmosphere.svg" alt="about__content-advantages-atmosphere-picture">
+                <img width="40" src="images/about/atmosphere.svg" alt="about__content-advantages-atmosphere-picture">
                 <h3 class="about__content-advantages-atmosphere-title">Cozy Atmosphere</h3>
                 <p class="about__content-advantages-atmosphere-description"> Our cafe is excellent for meeting with
                     friends or family.</p>
             </div>
             <div class="about__content-advantages-reservation">
-                <img width="40" src="image/about/reservation.svg" alt="about__content-advantages-reservation-picture">
+                <img width="40" src="images/about/reservation.svg" alt="about__content-advantages-reservation-picture">
                 <h3 class="about__content-advantages-reservation-title">Table Reservation</h3>
                 <p class="about__content-advantages-reservation-description"> Dozens of types of ice cream made from
                     natural ingredients.</p>
             </div>
             <div class="about__content-advantages-desserts">
-                <img width="40" src="image/about/desserts.svg" alt="about__content-advantages-desserts-picture">
+                <img width="40" src="images/about/desserts.svg" alt="about__content-advantages-desserts-picture">
                 <h3 class="about__content-advantages-desserts-title">Top Desserts</h3>
                 <p class="about__content-advantages-desserts-description"> We offer not only ice cream but also many
                     tasty desserts with cream.</p>
@@ -95,7 +73,7 @@
         </section>
         <div class="about__content-video">
             <video class="about__content-video-local" controls width="480" height="315"
-                poster="image/about/about_video_cover.png">
+                poster="images/about/about_video_cover.png">
                 <source src="video/icecream.webm" type="video/webm">
                 Sorry, your browser can not play this video.
             </video>
@@ -115,31 +93,23 @@
                 <a href="contacts.html" class="about__content-team-button">Send CV</a>
 
             </div>
-            <div class="about__content-team-carousel">
-                <div class="about__content-team-carousel-card">
-                    <div>
-                        <img class="about__content-team-carousel-card-photo" src="image/about/card_tomas.png"
-                            alt="Tomas Jackson">
-
-                    </div>
-                    <p class="about__content-team-carousel-card-name">Tomas Jackson</p>
-                </div>
-
-                <div class="about__content-team-carousel-card">
-                    <div>
-                        <img class="about__content-team-carousel-card-photo" src="image/about/card_eloise.png"
-                            alt="Eloise Birkenstone">
-                    </div>
-                    <p class="about__content-team-carousel-card-name">Eloise Birkenstone</p>
-                </div>
-                <div class="about__content-team-carousel-card">
-                    <div>
-                        <img class="about__content-team-carousel-card-photo" src="image/about/card_jane.png"
-                            alt="Jane Woss">
-                    </div>
-                    <p class="about__content-team-carousel-card-name">Jane Woss</p>
-                </div>
-
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_tomas.png" alt="Tomas Jackson" draggable="false"></div>
+                    <span>Tomas Jackson</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_eloise.png" alt="Eloise Birkenstone" draggable="false"></div>
+                    <span>Eloise Birkenstone</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_jane.png" alt="Jane Woss" draggable="false"></div>
+                    <span>Jane Woss</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
         </section>
         <section class="about__content-conclusion">

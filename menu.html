@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Page | Ice Cream Cafe</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
-    <header class="header header--menu">
-        <nav data-include="partials/header.partial.html"></nav>
-        <div class="header__title header__title--menu">
-            <h2 class="header__on-menu">Our Menu</h2>
+    <header class="header header__menu-page">
+        <div class="header__main-block container">
+            <nav data-include="partials/header.partial.html"></nav>
+            <div class="header__title header__title--menu">
+                <h2 class="header__on-menu">Our Menu</h2>
+            </div>
         </div>
     </header>
     <main>
@@ -26,60 +30,80 @@
                 <div class="booklets-menu__list">
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
-                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__pic">
+                                <img class="item__pic" src="images/menu/icecream/pistachio.png" alt="Pistachio Heaven">
+                            </div>
                             <div class="menu__item__description">
-                                <h4 class="menu__item__name">Pistachio Heaven $5</h4>
+                                <div class="menu__item__name">Pistachio Heaven<div class="item__line"></div>$5</div>
                                 <p class="menu__item__text">Creamy nutty flavor out guests like the most</p>
                             </div>
                         </div>
                     </div>
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
-                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__pic">
+                                <img class="item__pic" src="images/menu/icecream/lavender.png" alt="Lavender Special">
+                            </div>
                             <div class="menu__item__description">
-                                <h4 class="menu__item__name">Tropical Day $18</h4>
-                                <p class="menu__item__text">Lime ice cream, sliced kiwi and coconut, whipped cream</p>
-                            </div>      
+                                <div class="menu__item__name">Lavender Special<div class="item__line"></div>$8</div>
+                                <p class="menu__item__text">Our very special ice cream with strong lavender flavor</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="booklets-menu__section">
                 <div class="booklets-menu__title">
-                    <h3 class="booklets-menu__type">Even more treats</h3>
-                    <h2 class="booklets-menu__name">Desserts</h2>
-                    <p class="booklets-menu__text">We offer a variety of desserts with fruit and whipped cream.</p>
+                    <h3 class="menu__type">Even more treats</h3>
+                    <h2 class="menu__name">Desserts</h2>
+                    <p class="menu__text">We offer a variety of desserts with fruit and whipped cream.</p>
                 </div>
                 <div class="booklets-menu__list">
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
                             <div class="menu__item__pic"></div>
                             <div class="menu__item__description">
-                                <h4 class="menu__item__name">Choco Cream $11</h4>
+                                <div class="menu__item__name">Choco Cream<div class="item__line"></div>$11</div>
                                 <p class="menu__item__text">Biscuit, whipped cream, chocolate topping</p>
                             </div>
                         </div>
                     </div>
-                    <div class="booklets-menu__table"></div>
+                    <div class="booklets-menu__table">
+                        <div class="booklets-menu__item">
+                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__description">
+                                <div class="menu__item__name">Tropical Day<div class="item__line"></div>$18</div>
+                                <p class="menu__item__text">Lime ice cream, sliced kiwi and coconut, whipped cream</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="booklets-menu__section">
                 <div class="booklets-menu__title">
-                    <h3 class="booklets-menu__type">Drinks</h3>
-                    <h2 class="booklets-menu__name">Milkshakes & Cold Coffee</h2>
-                    <a href="#" class="booklets-menu__link">Sweet cold drinks for hot days in New York.</a>
+                    <h3 class="menu__type">Drinks</h3>
+                    <h2 class="menu__name">Milkshakes & Cold Coffee</h2>
+                    <p class="menu__text">Sweet cold drinks for hot days in New York.</p>
                 </div>
                 <div class="booklets-menu__list">
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
                             <div class="menu__item__pic"></div>
                             <div class="menu__item__description">
-                                <h4 class="menu__item__name">Iced Latte $10</h4>
-                                <p class="menu__item__text">Creamy nutty flavor out guests like the most</p>
+                                <div class="menu__item__name">Iced Latte<div class="item__line"></div>$10</div>
+                                <p class="menu__item__text">Espresso, sugar, whole milk, whipped cream, ice</p>
                             </div>
                         </div>
                     </div>
-                    <div class="booklets-menu__table"></div>
+                    <div class="booklets-menu__table">
+                        <div class="booklets-menu__item">
+                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__description">
+                                <div class="menu__item__name">Mango Shake<div class="item__line"></div>$8</div>
+                                <p class="menu__item__text">Sliced mango, vanilla ice cream,  milk, mango syrup</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -87,4 +111,5 @@
     <footer></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
+
 </html>
