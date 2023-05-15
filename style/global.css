@@ -4,7 +4,7 @@
 /* font-family: 'Source Sans 3', sans-serif; */
 
 :root {
-    --main-text-color: white;
+    --main-text-color: #ffffff;
     --background-color-about: #b87390;
     --additional-color-about: #a55376;
 
@@ -13,9 +13,9 @@
 
     --background-color-contacts: #f8b83d;
     --additional-color-contacts: #ffc452;
-
+    
     --header-menu-link: 3px solid #912251;
-
+    
     --link-button-first-style: #ffc452;
     --link-button-second-style: #32264b;
 

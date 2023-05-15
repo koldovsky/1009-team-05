@@ -12,7 +12,9 @@
 <body>
     <header class="header header__contacts">
         <div class="header__main-block">
-            <nav data-include="partials/header.partial.html"></nav>
+            <div class="header__container container">
+                <nav data-include="partials/header.partial.html"></nav>
+            </div>
             <div class="header__title header__title--contacts">
                 <h2 class="header__on-contacts">Contacts</h2>
             </div>
@@ -22,40 +24,45 @@
     <div class="wrapper">
 
 
-        <div class="main">
+        <main class="main">
             <div class="main__container container">
                 <div class="main__info info">
                     <div class="info__card">
-                        <div class="info__icon"></div>
+                        <div class="info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:40px" height="100%"><path d="M73.733,92.002c-0.001,0-0.002,0-0.003,0C57.5,92.001,39.091,75.379,31.93,68.233C24.096,60.416,6.099,40.416,8.162,23.57  c0.776-6.333,4.295-11.421,10.46-15.123c0.496-0.298,1.063-0.449,1.685-0.449c4.849,0,14.412,11.319,18.283,16.8  c5.533,7.835,4.749,10.046,4.454,10.878c-0.938,2.644-2.683,4.186-4.222,5.545c-1.347,1.19-2.51,2.217-3.103,3.888  c-0.082,0.406,0.456,2.598,3.97,6.917c5.522,6.787,12.798,12.252,15.141,12.252c1.729-0.592,2.758-1.755,3.947-3.102  c1.36-1.539,2.901-3.283,5.546-4.222c0.372-0.132,0.784-0.199,1.224-0.199c5.575,0,21.702,13.226,25.487,19.907  c0.401,0.709,1.623,2.867,0.517,4.712C87.324,88.427,81.328,92.002,73.733,92.002z M20.446,12.02  c-4.976,3.057-7.696,6.997-8.313,12.036c-1.283,10.473,7.174,25.93,22.622,41.345c6.81,6.795,24.238,22.6,38.977,22.601  c0,0,0.001,0,0.002,0c6.097,0,10.761-2.767,14.249-8.456c-0.66-3.953-18.215-18.726-22.408-18.79  c-1.618,0.602-2.631,1.747-3.799,3.069c-1.361,1.54-2.903,3.285-5.549,4.224c-0.428,0.152-0.897,0.229-1.396,0.229  c-5.299,0-15.411-9.53-20.045-16.092c-2.608-3.692-3.536-6.444-2.836-8.415c0.938-2.646,2.684-4.188,4.223-5.548  c1.324-1.169,2.47-2.183,3.071-3.804c0.022-1.441-3.24-7.22-9.33-14.125C24.913,14.623,21.556,12.27,20.446,12.02z" style="" fill="currentColor"></path></svg>
+                        </div>
                         <div class="info__underIcon">Phone</div>
-                        <div class="info__description">+1 (234) 567 89 00
-                            +1 (234) 567 89 01</div>
+                        <div class="info__description"><a class="info__link">+1 (234) 567 89 00</a>
+                            <a class="info__link">+1 (234) 567 89 01</a></div>
                     </div>
                     <div class="info__card">
-                        <div class="info__icon"></div>
+                        <div class="info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:40px" height="100%"><path d="M92.863,35.62c-0.771-1.098-1.693-2.081-2.739-2.917c-2.002-1.6-4.45-2.657-7.124-2.964V2.75H19.25v26.983  c-2.691,0.301-5.155,1.361-7.168,2.97c-1.046,0.836-1.969,1.818-2.74,2.917c-1.595,2.273-2.54,5.035-2.54,8.017v36.727  c0,7.72,6.28,14,14,14h60.602c7.72,0,14-6.28,14-14V43.637C95.403,40.654,94.459,37.893,92.863,35.62z M79,6.75v22.887H23.25V6.75  H79z M20.802,33.637h60.602c2.193,0,4.217,0.718,5.867,1.919L58.174,64.653c-1.889,1.889-4.4,2.929-7.072,2.929  c-2.67,0-5.182-1.04-7.07-2.929L14.935,35.556C16.585,34.354,18.609,33.637,20.802,33.637z M91.403,80.363c0,5.514-4.486,10-10,10  H20.802c-5.514,0-10-4.486-10-10V43.637c0-1.875,0.528-3.625,1.43-5.127l28.971,28.972c2.644,2.645,6.16,4.101,9.898,4.101  c3.74,0,7.256-1.456,9.9-4.101L89.973,38.51c0.902,1.502,1.431,3.252,1.431,5.127V80.363z" style="" fill="currentColor"></path><g style="" fill="currentColor"><rect x="48" y="11.75" width="25.75" height="2" style="" fill="currentColor"></rect></g><g style="" fill="currentColor"><rect x="48" y="21.75" width="25.75" height="2" style="" fill="currentColor"></rect></g><g style="" fill="currentColor"><rect x="48" y="16.75" width="25.75" height="2" style="" fill="currentColor"></rect></g><g style="" fill="currentColor"><path d="M38.347,14.878c-0.04,0.16-0.107,0.36-0.2,0.6l-0.4,0.94l-0.34,0.8c-0.214,0.507-0.354,0.92-0.42,1.24   c-0.093,0.36-0.113,0.62-0.06,0.78c0.04,0.094,0.073,0.147,0.1,0.16l0.08,0.04c0.027,0.014,0.066,0.027,0.12,0.04   c0.053,0.013,0.113,0.033,0.18,0.06c0.733,0.28,1.446,0.153,2.14-0.38s1.073-1.2,1.14-2c0.146-1.547-0.113-2.797-0.78-3.75   c-0.667-0.953-1.56-1.55-2.68-1.79c-1.107-0.253-2.244-0.127-3.41,0.38c-1.167,0.507-2.13,1.347-2.89,2.52   c-0.12,0.2-0.223,0.447-0.31,0.74c-0.087,0.293-0.15,0.54-0.19,0.74c-0.027,0.213-0.06,0.513-0.1,0.9   c-0.12,1.147,0.11,2.227,0.69,3.24s1.37,1.806,2.37,2.38c0.653,0.373,1.33,0.613,2.03,0.72c0.7,0.107,1.41,0.047,2.13-0.18   c0.72-0.227,1.373-0.627,1.96-1.2c0.146-0.16,0.297-0.164,0.45-0.01c0.153,0.153,0.15,0.303-0.01,0.45   c-0.653,0.653-1.39,1.11-2.21,1.37c-0.82,0.26-1.62,0.33-2.4,0.21c-0.78-0.12-1.537-0.387-2.27-0.8   c-1.107-0.64-1.98-1.52-2.62-2.64c-0.64-1.12-0.893-2.327-0.76-3.62c0.04-0.413,0.073-0.713,0.1-0.9   c0.04-0.213,0.11-0.497,0.21-0.85c0.1-0.353,0.236-0.656,0.41-0.91c0.813-1.28,1.866-2.197,3.16-2.75s2.56-0.697,3.8-0.43   c1.28,0.28,2.3,0.963,3.06,2.05c0.76,1.087,1.06,2.477,0.9,4.17c-0.04,0.48-0.187,0.937-0.44,1.37   c-0.253,0.434-0.574,0.797-0.96,1.09c-0.88,0.693-1.8,0.853-2.76,0.48c-0.014-0.013-0.053-0.03-0.12-0.05s-0.13-0.04-0.19-0.06   s-0.104-0.043-0.13-0.07c-0.173-0.093-0.307-0.26-0.4-0.5c-0.494,0.467-1.094,0.733-1.8,0.8c-0.507,0.04-0.953-0.06-1.34-0.3   c-0.387-0.24-0.627-0.626-0.72-1.16c-0.106-0.667,0.02-1.37,0.38-2.11c0.36-0.74,0.84-1.33,1.44-1.77   c0.653-0.493,1.287-0.673,1.9-0.54c0.52,0.12,0.953,0.454,1.3,1c0.12-0.28,0.193-0.5,0.22-0.66c0.026-0.08,0.077-0.143,0.15-0.19   c0.073-0.046,0.153-0.06,0.24-0.04c0.086,0.02,0.153,0.067,0.2,0.14C38.343,14.702,38.36,14.785,38.347,14.878z M36.307,18.498   l0.04-0.2c0.093-0.346,0.247-0.787,0.46-1.32l0.36-0.84c-0.28-0.653-0.647-1.027-1.1-1.12c-0.427-0.093-0.894,0.047-1.4,0.42   c-0.507,0.374-0.917,0.877-1.23,1.51c-0.313,0.634-0.423,1.21-0.33,1.73c0.12,0.693,0.573,1.007,1.36,0.94   c0.36-0.027,0.703-0.133,1.03-0.32c0.327-0.187,0.557-0.406,0.69-0.66C36.213,18.571,36.253,18.525,36.307,18.498z" style="" fill="currentColor"></path></g></svg>
+                        </div>
                         <div class="info__underIcon">Email</div>
                         <div class="info__description">mr.snowman@email.com
                             mr.snowmanbook@email.com</div>
                     </div>
                     <div class="info__card">
-                        <div class="info__icon"></div>
+                        <div class="info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="max-width:40px" height="100%"><g style="" fill="currentColor"><path fill="currentColor" d="M49.863,5.03c-16.646,0-30.188,13.541-30.188,30.188c0,16.033,27.46,55.978,28.63,57.676l1.557,2.246   l1.548-2.246c1.17-1.699,28.64-41.643,28.64-57.676C80.05,18.572,66.509,5.03,49.863,5.03z M49.863,8.805   c14.561,0,26.413,11.852,26.413,26.413c0,12.796-20.534,44.437-26.413,53.232C43.984,79.654,23.45,48.014,23.45,35.218   C23.45,20.657,35.293,8.805,49.863,8.805z" style=""></path></g><g style="" fill="currentColor"><path fill="currentColor" d="M49.995,16.678c-9.77,0-17.71,7.94-17.71,17.7c0,9.77,7.94,17.71,17.71,17.71   c9.76,0,17.71-7.94,17.71-17.71C67.705,24.618,59.755,16.678,49.995,16.678z M49.995,48.088c-7.56,0-13.71-6.15-13.71-13.71   c0-7.55,6.15-13.7,13.71-13.7s13.71,6.15,13.71,13.7C63.706,41.938,57.555,48.088,49.995,48.088z" style=""></path></g></svg>
+                        </div>
                         <div class="info__underIcon">Cafe Address</div>
                         <div class="info__description">176 Spring St, New York, NY 10012, United States</div>
                     </div>
                     <div class="info__card">
-                        <div class="info__icon"></div>
+                        <div class="info__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve" style="max-width:40px" height="100%"><g style="" fill="currentColor"><g style="" fill="currentColor"><path fill="currentColor" d="M256.5,45.662C140.333,45.662,46.162,139.833,46.162,256c0,116.166,94.171,210.338,210.338,210.338    S466.838,372.166,466.838,256C466.838,139.833,372.667,45.662,256.5,45.662z M387.554,387.053    c-17.026,17.027-36.849,30.394-58.917,39.728c-22.839,9.659-47.108,14.558-72.137,14.558s-49.299-4.898-72.137-14.558    c-22.068-9.334-41.891-22.7-58.917-39.728c-17.027-17.025-30.393-36.849-39.727-58.916C76.06,305.298,71.162,281.028,71.162,256    s4.898-49.298,14.558-72.137c9.334-22.068,22.7-41.891,39.726-58.918c17.027-17.026,36.85-30.392,58.917-39.726    c22.838-9.659,47.108-14.558,72.137-14.558s49.298,4.898,72.137,14.558c22.068,9.334,41.891,22.699,58.917,39.726    c17.027,17.027,30.393,36.85,39.727,58.918c9.659,22.839,14.558,47.108,14.558,72.137s-4.898,49.298-14.558,72.137    C417.946,350.204,404.581,370.027,387.554,387.053z" style=""></path><polygon fill="currentColor" points="253.099,126 243.69,126 223.395,264.06 222.4,272.617 229.432,278.22 367.856,380.532     373.028,375.215 255.5,256   " style=""></polygon></g></g></svg>
+                        </div>
                         <div class="info__underIcon">Working Hours</div>
-                        <div class="info__description">Mon – Thu: 10:00 AM – 11 PM
-                            Sat - Sun : 11:00 AM – 11 PM</div>
+                        <div class="info__description"><a class="info__link">Mon – Thu: 10:00 AM – 11 PM</a>
+                            <a class="info__link">Sat - Sun : 11:00 AM – 11 PM</a></div>
                     </div>
                 </div>
                 <div class="main__section">
 
                     <div class="main__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10294.481157363469!2d24.036388435937486!3d49.83080145692316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add68c80560f5%3A0x87995e6415d6d177!2z0J_QsNC8J9GP0YLQvdC40Log0JzQuNGF0LDQudC70L7QstGWINCT0YDRg9GI0LXQstGB0YzQutC-0LzRgw!5e0!3m2!1suk!2sua!4v1683457563273!5m2!1suk!2sua"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10170.453508748347!2d-74.0132364114468!3d40.724754087398544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c41edbcf7%3A0x5e47a0728e2f9b4b!2zMTc2IFNwcmluZyBTdCwgTmV3IFlvcmssIE5ZIDEwMDEyLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1684179297501!5m2!1suk!2sua" width="570" height="714" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="main__modalform modalform">
                         <div class="modalform__header">
@@ -64,29 +71,25 @@
                                 can.</div>
                         </div>
                         <div class="modalform__info">
-                            <div class="modalform__inputs"><input type="text" placeholder="Your Name"></div>
-                            <div class="modalform__inputs"><input type="number" placeholder="Phone number"></div>
-                            <div class="modalform__inputs"><input type="email" placeholder="Email"></div>
+                            <div class="modalform__inputs"><input type="text" placeholder="Your Name*"></div>
+                            <div class="modalform__inputs"><input type="number" placeholder="Phone number*"></div>
+                            <div class="modalform__inputs"><input type="email" placeholder="Email*"></div>
                             <div class="modalform__inputs"><input type="text" placeholder="Type your message"></div>
                         </div>
-                        <div class="modalform__button ">
+                        <div class="modalform__button">
                             <div class="button__wrapper">
                                 <button type="submit">Send a Message</button>
                             </div>
-
-
-
-
-
                         </div>
                     </div>
 
                 </div>
             </div>
 
-        </div>
+        </main>
         <div class="footer">
             <div class="footer__container container">
+                <div data-include="partials/footer.partial.html"></div>
 
 
 

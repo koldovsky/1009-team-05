@@ -62,8 +62,8 @@
 
 .header__menu-cell .header__menu-link:hover {
     border-bottom: var(--header-menu-link);
+    transition: 0.5s;
 }
-
 .header__welcome {
     font-size: 21px;
     color: var(--main-text-color);
