@@ -16,11 +16,13 @@
 
     --header-menu-link: 3px solid #912251;
 
-    --link-button-first-style: #ffc452;
+    --link-button-first-style: #ffa800;
     --link-button-second-style: #32264b;
+    --link-button-third-style: #a55376;
 
-    --drop-violet-shadow: 0px 4px 3px #3f3255, 0px -4px 3px #3f3255, -4px 0px 3px #3f3255, 4px 0px 3px #3f3255;
-    
+    --color_shadow: #000000;
+    --drop-violet-shadow: 0px 4px 3px var(--color_shadow), 0px -4px 3px var(--color_shadow), -4px 0px 3px var(--color_shadow), 4px 0px 3px var(--color_shadow);
+
     --booklets-menu-background: #493b5f;
 
     scroll-behavior: smooth;
