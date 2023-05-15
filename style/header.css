@@ -102,6 +102,15 @@
     background-color: var(--link-button-second-style);
 }
 
+.main__booklets-menu {
+    background-color: var(--booklets-menu-background);
+}
+
+.main__main-block-booklets-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
 @media(min-width:992px) {
     .header__hamburger-menu {
         display: none;

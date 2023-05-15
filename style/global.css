@@ -16,10 +16,12 @@
 
     --header-menu-link: 3px solid #912251;
 
-    --link-button-first-style: #ffc452; 
+    --link-button-first-style: #ffc452;
     --link-button-second-style: #32264b;
 
     --drop-violet-shadow: 0px 4px 3px #3f3255, 0px -4px 3px #3f3255, -4px 0px 3px #3f3255, 4px 0px 3px #3f3255;
+
+    --booklets-menu-background: #493b5f;
 
     scroll-behavior: smooth;
 }
@@ -35,3 +37,7 @@ img {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* * {
+    border: 1px solid green;
+} */
