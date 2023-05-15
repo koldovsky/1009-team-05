@@ -108,7 +108,35 @@
 
 .main__main-block-booklets-menu {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.main__booklets-menu-section {
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid var(--main-text-color);
+    height: 463px;
+    margin: 15px;
+    text-align: center;
+}
+
+.main__booklets-menu-section--desserts {
+    background-image: url(../images/header/desserts.png);
+}
+
+.main__booklets-menu-section--milk-shakes {
+    background-image: url(../images/header/milk-shakes.png);
+}
+
+.main__booklets-menu-section--ice-cream {
+    background-image: url(../images/header/ice-cream.png);
+}
+
+.main__booklets-menu-deserts {
+    color: var(--main-text-color);
+    font-size: 30px;
 }
 
 @media(min-width:992px) {
@@ -125,5 +153,15 @@
 @media(min-width:930px) {
     .header__title--index {
         text-shadow: none;
+    }
+}
+
+@media(min-width: 767px) {
+    .main__main-block-booklets-menu {
+        flex-direction: row;
+    }
+
+    .main__booklets-menu-section {
+        min-width: 328px;
     }
 }
