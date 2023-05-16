@@ -25,6 +25,10 @@
 
     --booklets-menu-background: #493b5f;
 
+    --desserts-tabs-background: #32264b;
+    --desserts-tabs-header: rgb(225,221,232);
+    --desserts-tabs-content-text: rgb(255,196,82);
+
     scroll-behavior: smooth;
 }
 
