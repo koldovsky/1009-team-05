@@ -7,6 +7,6 @@ function show_hide_hamburger() {
     }
     else {
         document.getElementById("hamburger-list").style.display = "unset";
-        body_overflow[0].style.overflow = "disabled";
+        body_overflow[0].style.overflow = "hidden";
     }
 }
