@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-name: slidein;
 }
 
@@ -233,7 +233,7 @@
     }
 
     .header__main-hamburger-block {
-        display: none;
+        display: none !important; 
     }
 
     .main__booklets-menu-section {
