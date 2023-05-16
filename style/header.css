@@ -2,13 +2,60 @@
     width: 129px;
 }
 
+.header__main-hamburger-block {
+    background-color: var(--booklets-menu-background);
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.header__hamburger-transparent-block {
+    height: 123px;
+}
+
+.header__hamburger-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100vw;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0vw;
+        width: 100%;
+    }
+}
+
+.header__hamburger-navigation-link-container {
+    margin: 22px;
+
+}
+
+.header__hamburger-navigation-link {
+    
+}
+
+.header__hamburger-txt-link {
+    padding: 16px 32px;
+}
+
+.header__hamburger-txt-link:hover {
+    background-color: var(--link-button-third-style);
+}
 .header__index {
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
     color: var(--main-text-color);
-
 }
 
 .header__main-block {
@@ -36,6 +83,16 @@
     justify-content: space-between;
 }
 
+.header__index-ref {
+    position: relative;
+    z-index: 20;
+}
+
+.header__hamburger-menu {
+    position: relative;
+    z-index: 20;
+}
+
 .header__menu {
     display: none;
 }
@@ -57,6 +114,7 @@
 
 .header__menu-cell .header__menu-link:hover {
     border-bottom: var(--header-menu-link);
+    transition: 0.5s;
 }
 
 .header__welcome {
@@ -78,16 +136,25 @@
 
 .header__button-block {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .header__button-block a,
 .main__booklets-menu-section a {
+    border: 1px solid var(--booklets-menu-background);
     border-radius: 25px;
     margin: 10px;
     padding: 18px 35px;
     text-align: center;
     width: 170px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.header__button-block a:hover,
+.main__booklets-menu-section a:hover {
+    opacity: 0.8;
 }
 
 .header__about-cafe-button {
@@ -102,6 +169,7 @@
 .main__booklets-menu-link--third-style {
     background-color: var(--link-button-third-style);
 }
+
 .main__booklets-menu {
     background-color: var(--booklets-menu-background);
 }
@@ -109,6 +177,7 @@
 .main__main-block-booklets-menu {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     color: var(--main-text-color);
 }
 
@@ -144,6 +213,10 @@
 }
 
 @media(min-width: 767px) {
+    .header__button-block {
+        justify-content: left;
+    }
+
     .main__main-block-booklets-menu {
         flex-direction: row;
         flex-wrap: wrap;
@@ -155,10 +228,12 @@
 }
 
 @media(min-width:992px) {
-    .header__index {}
-
     .header__hamburger-menu {
         display: none;
+    }
+
+    .header__main-hamburger-block {
+        display: none !important; 
     }
 
     .main__booklets-menu-section {
