@@ -3,7 +3,7 @@
 }
 
 .header__main-hamburger-block {
-    background-color: var(--hamburger-background-color);
+    background-color: var(--booklets-menu-background);
     display: none;
     position: fixed;
     width: 100%;
@@ -35,15 +35,21 @@
 }
 
 .header__hamburger-navigation-link-container {
-    padding: 16px 64px;
-    margin: 5px;
+    margin: 22px;
 
 }
 
-.header__hamburger-navigation-link-container:hover {
-    background-color: var(--link-button-second-style);
+.header__hamburger-navigation-link {
+    
 }
 
+.header__hamburger-txt-link {
+    padding: 16px 32px;
+}
+
+.header__hamburger-txt-link:hover {
+    background-color: var(--link-button-third-style);
+}
 .header__index {
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
