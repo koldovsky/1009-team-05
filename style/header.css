@@ -34,22 +34,46 @@
     }
 }
 
-.header__hamburger-navigation-link-container {
+.header__hamburger-navigation-link-container,
+.main__booklets-link-container {
     margin: 22px;
 
 }
 
-.header__hamburger-navigation-link {
-    
-}
-
 .header__hamburger-txt-link {
-    padding: 16px 32px;
+    padding: 16px 20px;
+    transition: background-color 1s;
 }
 
-.header__hamburger-txt-link:hover {
+.main__booklets-txt-link {
+    color: var(--main-text-color);
+    padding: 17px 37px;
+    background-color: var(--link-button-second-style);
+    border-radius: 17px;
+    transition: background-color 2s;
+}
+
+.main__booklets-txt-link:hover {
+    background-color: var(--link-button-hover-style);
+    transition: background-color;
+}
+
+.main__booklets-menu-link--third-style {
     background-color: var(--link-button-third-style);
 }
+
+
+.header__menu-cell-links-txt {
+    border-bottom: 3px solid var(--transparent-color);
+    padding: 16px 20px;
+    transition: border-bottom 1s;
+}
+
+.header__menu-cell-links-txt:hover {
+    border-bottom: 3px solid var(--link-button-hover-style);
+    transition: border-bottom;
+}
+
 .header__index {
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
@@ -112,11 +136,6 @@
     text-shadow: var(--drop-violet-shadow);
 }
 
-.header__menu-cell .header__menu-link:hover {
-    border-bottom: var(--header-menu-link);
-    transition: 0.5s;
-}
-
 .header__welcome {
     font-size: 1.2em;
     color: var(--main-text-color);
@@ -140,34 +159,30 @@
     flex-wrap: wrap;
 }
 
-.header__button-block a,
-.main__booklets-menu-section a {
+.header__button-block a {
     border: 1px solid var(--booklets-menu-background);
     border-radius: 25px;
     margin: 10px;
     padding: 18px 35px;
     text-align: center;
     width: 170px;
-    opacity: 1;
-    transition: 0.4s;
+    transition: background-color 1000ms linear;
 }
 
 .header__button-block a:hover,
-.main__booklets-menu-section a:hover {
-    opacity: 0.8;
+.main__booklets-menu-section a:hover,
+.header__hamburger-txt-link:hover {
+    background-color: var(--link-button-hover-style);
+    transition: background-color;
 }
+
 
 .header__about-cafe-button {
     background-color: var(--link-button-first-style);
 }
 
-.header__our-menu-button,
-.main__booklets-menu-link--second-style {
+.header__our-menu-button {
     background-color: var(--link-button-second-style);
-}
-
-.main__booklets-menu-link--third-style {
-    background-color: var(--link-button-third-style);
 }
 
 .main__booklets-menu {
@@ -233,7 +248,7 @@
     }
 
     .header__main-hamburger-block {
-        display: none !important; 
+        display: none !important;
     }
 
     .main__booklets-menu-section {
