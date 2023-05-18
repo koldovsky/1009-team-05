@@ -61,6 +61,7 @@
 .main__booklets-menu-link {
     border: 1px solid var(--white-color);
     color: var(--white-color);
+    font-weight: bold;
     padding: 16px 32px;
     display: block;
     background-color: var(--link-button-second-style);
@@ -80,6 +81,7 @@
 
 .header__menu-cell-links-txt {
     border-bottom: 3px solid var(--transparent-color);
+    font-weight: bold;
     padding: 16px 20px;
     transition: border-bottom 1s;
 }
@@ -137,7 +139,7 @@
 }
 
 .header__menu-cell {
-    padding: 24px;
+    padding: 18px;
 }
 
 .header__title {
@@ -191,11 +193,13 @@
     border-radius: 32px;
     margin: 10px;
     transition: background-color 2s;
+    font-weight: bold;
 }
 
 .header__about-cafe-button:hover,
 .header__our-menu-button:hover {
     background-color: var(--link-button-hover-style);
+    border-color: var(--link-button-second-style);
     transition: background-color;
 }
 
