@@ -60,6 +60,7 @@
 
 .main__booklets-menu-link {
     border: 1px solid var(--white-color);
+    color: var(--white-color);
     padding: 16px 32px;
     display: block;
     background-color: var(--link-button-second-style);
@@ -93,7 +94,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
-    color: var(--main-text-color);
+    color: var(--white-color);
 }
 
 .header__main-block {
@@ -152,18 +153,21 @@
 
 .header__welcome {
     font-size: 1.2em;
-    color: var(--main-text-color);
+    color: var(--white-color);
+    font-family: Leckerli One;
     /* temporary option */
 }
 
 .header__owner {
     font-size: 2em;
+    font-family: Dangrek;
 }
 
 .header__story {
     font-size: 0.7em;
     margin: 30px 0px;
     color: var(--white-color);
+    font-family: sans-serif;
     /* temporary option */
 }
 
