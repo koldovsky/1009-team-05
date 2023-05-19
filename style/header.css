@@ -14,6 +14,32 @@
     height: 123px;
 }
 
+.header__hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    position: relative;
+    z-index: 20;
+}
+
+.header__hamburger-menu:hover .header__lin-ham {
+    background-color: var(--link-button-hover-style);
+    transition: background-color;
+}
+
+.header__lin-ham {
+    width: 36px;
+    height: 3px;
+    background-color: var(--white-color);
+    transition: background-color 2s;
+}
+
+.header__hamburger-button {}
+
 .header__hamburger-navigation {
     display: flex;
     flex-direction: column;
@@ -125,11 +151,6 @@
 }
 
 .header__index-ref {
-    position: relative;
-    z-index: 20;
-}
-
-.header__hamburger-menu {
     position: relative;
     z-index: 20;
 }
