@@ -55,3 +55,20 @@ warnTheSheep = (queue) => {
     return null;
   }
   
+
+  // Додаткові задачки по JS, кому мало, якщо маєте час і бажання 🙂
+
+// https://www.codewars.com/kata/53ee5429ba190077850011d4/train/javascript
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i * 2;
+}
+
+// https://www.codewars.com/kata/5a3fe3dde1ce0e8ed6000097
+function century(year) {
+  // Finish this 🙂
+  return Math.ceil(year / 100);
+}
+
+// https://www.codewars.com/kata/523b66342d0c301ae400003b/train/javascript
+const multiply = (multiplier, multiplicand) => multiplier * multiplicand;
