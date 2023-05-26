@@ -10,3 +10,14 @@
 .bmango {
     background-image: url(../images/blog/bmango.png);
 }
+.blog-section-header {
+    
+        color: black;
+        font-family: 'Dangrek';
+        font-size:26px;
+}
+.blog-paragraph {
+    font-size: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+  color: black;
+}
