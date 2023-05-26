@@ -5,7 +5,7 @@ let blockedRunning = false;
 function show_hide_hamburger() {
     timeoutId = setTimeout(function () {
         blockedRunning = false;
-    }, 550);
+    }, 600);
 
     if (blockedRunning) { }
     else {
