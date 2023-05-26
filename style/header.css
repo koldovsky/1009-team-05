@@ -63,6 +63,7 @@
     color: var(--white-color);
     transition: color 2s;
 }
+
 .header__hamburger-navigation {
     display: flex;
     flex-direction: column;
@@ -293,6 +294,28 @@
     font-size: 30px;
 }
 
+.header__countdown {
+    display: flex;
+
+}
+
+.header__countdown-coll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__title-countdown,
+.header__countdown-time {
+    font-size: 2em;
+    text-shadow: var(--drop-violet-shadow);
+}
+
+.countdown-days {
+    padding-right: 64px;
+}
+
 @media(min-width: 767px) {
     .header__button-block {
         justify-content: left;
@@ -305,6 +328,10 @@
 
     .main__booklets-menu-section {
         flex-basis: 45%;
+    }
+
+    .header__countdown-time {
+        font-size: 4em;
     }
 }
 
@@ -337,5 +364,9 @@
     .header__menu {
         display: flex;
 
+    }
+
+    .header__countdown-time {
+        font-size: 7em;
     }
 }
