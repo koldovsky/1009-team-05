@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js" defer></script>
+    <script src="/js/about_carousel.js" defer></script>
 </head>
 
 <body>
@@ -56,15 +57,15 @@
         </article>
         <section class="about__content-advantages">
             <div class="about__content-advantages-delicious">
-                <div class="advantages-icon"><img src="images/about/delicious.svg" alt="about__content-advantages-delicious-picture"></div>
+                <div class="advantages-icon"><img src="images/about/delicious.svg"
+                        alt="about__content-advantages-delicious-picture"></div>
                 <h3 class="about__content-advantages-title">Delicious Ice Cream</h3>
                 <p class="about__content-advantages-delicious-description"> Dozens of types of ice cream made from
                     natural ingredients.</p>
             </div>
             <div class="about__content-advantages-atmosphere">
                 <div class="advantages-icon">
-                    <img id="svg" src="images/about/atmosphere.svg"
-                        alt="about__content-advantages-atmosphere-picture">
+                    <img id="svg" src="images/about/atmosphere.svg" alt="about__content-advantages-atmosphere-picture">
                 </div>
                 <h3 class="about__content-advantages-title">Cozy Atmosphere</h3>
                 <p class="about__content-advantages-atmosphere-description"> Our cafe is excellent for meeting with
@@ -72,7 +73,8 @@
             </div>
             <div class="about__content-advantages-reservation">
                 <div class="advantages-icon">
-                    <img class="img" src="images/about/reservation.svg" alt="about__content-advantages-reservation-picture">
+                    <img class="img" src="images/about/reservation.svg"
+                        alt="about__content-advantages-reservation-picture">
                 </div>
                 <h3 class="about__content-advantages-title">Table Reservation</h3>
                 <p class="about__content-advantages-reservation-description"> Dozens of types of ice cream made from
@@ -80,7 +82,8 @@
             </div>
             <div class="about__content-advantages-desserts">
                 <div class="advantages-icon">
-                    <img class="img" src="images/about/desserts.svg" alt="about__content-advantages-reservation-picture">
+                    <img class="img" src="images/about/desserts.svg"
+                        alt="about__content-advantages-reservation-picture">
                 </div>
                 <h3 class="about__content-advantages-title">Top Desserts</h3>
                 <p class="about__content-advantages-desserts-description"> We offer not only ice cream but also many
@@ -110,16 +113,32 @@
                 <a href="contacts.html" class="about__content-team-button">Send CV</a>
 
             </div>
-            <div class="about__content-team-carousel">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_tomas.png" alt="Tomas Jackson" draggable="false"></div>
+                    <span>Tomas Jackson</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_eloise.png" alt="Eloise Birkenstone" draggable="false"></div>
+                    <span>Eloise Birkenstone</span>
+                    </li>
+                    <li class="card">
+                        <div class="img"><img src="images/about/card_jane.png" alt="Jane Woss" draggable="false"></div>
+                    <span>Jane Woss</span>
+                    </li>
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+            <!-- <div class="about__content-team-carousel">
                 <div class="about__content-team-carousel-card">
                     <div>
                         <img class="about__content-team-carousel-card-photo" src="images/about/card_tomas.png"
                             alt="Tomas Jackson">
-
                     </div>
                     <p class="about__content-team-carousel-card-name">Tomas Jackson</p>
                 </div>
-
                 <div class="about__content-team-carousel-card">
                     <div>
                         <img class="about__content-team-carousel-card-photo" src="images/about/card_eloise.png"
@@ -133,7 +152,7 @@
                             alt="Jane Woss">
                     </div>
                     <p class="about__content-team-carousel-card-name">Jane Woss</p>
-                </div>
+                </div> -->
         </section>
         <section class="about__content-conclusion">
             <h2 class="about__content-conclusion-title">

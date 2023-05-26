@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+about__content-team-carousel {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.card .img img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 3% 3% 0 0;
+
+}
+
+about__content-team-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #b87390;
+    padding: 0 35px;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: auto;
+    list-style: none;
+    background: #a55376;
+    border-radius: 2%;
+    display: flex;
+    padding-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+
+.carousel.dragging.card{
+    cursor: grab;
+    user-select:none;
+}
+
+.wrapper i:hover {
+    background: rgb(255, 255, 255);
+    
+}
+
+.wrapper i {
+    height: 32px;
+    width: 32px;
+    background: rgba(255, 255, 255, 0.648);
+    text-align: center;
+    line-height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: rgb(86, 82, 82);
+
+}
+
+.wrapper i:first-child {
+    left:-20px;
+}
+.wrapper i:last-child {
+    right:-20px;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100%/3) - 12px) ;
+    gap: 10px;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel.no-transition{
+    scroll-behavior: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    max-width: 1200px;
+    /* width:100%; */
+    position:relative;
+}
+
+.card span {
+    font-weight: 500;
+    font-family: 'Dangrek', cursive;
+    color: white;
+    font-size: 1.75em;
+
+}
+
+
+@media screen and (min-width:400px){
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}
+@media screen and (min-width:700px){
+    .wrapper .carousel {
+        grid-auto-columns: calc((100%/2) - 9px)
+    }
+}
+@media screen and (min-width:1000px){
+    .wrapper .carousel {
+        grid-auto-columns: calc((100%/3) - 9px)
+    }
+}
