@@ -10,6 +10,18 @@
     height: 100%;
 }
 
+.header__contacts-hamburger-block {
+    background-color: var(--additional-color-contacts);
+}
+
+.header__menu-hamburger-block {
+    background-color: var(--additional-color-menu);
+}
+
+.header__about-hamburger-block {
+    background-color: var(--additional-color-about);
+}
+
 .header__hamburger-transparent-block {
     height: 123px;
 }

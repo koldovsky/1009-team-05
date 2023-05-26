@@ -4,8 +4,8 @@ setInterval(function () {
     let difference = deadLine - currentTime;
     let timeFragment = convertMilliseconds(difference);
     document.querySelector(".header__countdown-days").innerHTML = timeFragment.days;
-    document.querySelector(".header__countdown-housr").innerHTML = timeFragment.hours + ":";
-    document.querySelector(".header__countdown-minutes").innerHTML = timeFragment.minutes + ":";
+    document.querySelector(".header__countdown-housr").innerHTML = timeFragment.hours;
+    document.querySelector(".header__countdown-minutes").innerHTML = timeFragment.minutes;
     document.querySelector(".header__countdown-seconds").innerHTML = timeFragment.seconds;
 
 }, 1000);
