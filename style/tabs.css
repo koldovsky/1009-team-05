@@ -1,0 +1,143 @@
+.desserts {
+  padding: 0 24px;
+}
+
+.tabs__head {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.tabs__head::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--main-text-color);
+  opacity: .125;
+}
+
+.tabs__heading {
+  padding: 15px 20px;
+  color: var(--main-text-color);
+  font-family: 'Source Sans 3', sans-serif;
+  opacity: .6
+}
+.tabs__heading:hover {
+  opacity: 1;
+}
+
+.tabs__header__content {
+  color: var(--main-text-color);
+  font-family: 'Dangrek';
+}
+
+.tabs__header__content {
+  text-align: center;
+}
+
+.tabs__header__content_small {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  font-family: 'Leckerli One';
+}
+
+.tabs__header__content_big {
+  font-size: 34px;
+}
+
+.tabs__header__content_standart {
+  font-size: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--desserts-tabs-header);
+}
+
+.desserts {
+  background-color: var(--booklets-menu-background);
+}
+
+.tabs__content .tabs__content-box__heading {
+  color: var(--main-text-color);
+  font-family: 'Dangrek';
+}
+
+.tabs__content .tabs__content-box {
+  background-color: var(--desserts-tabs-background);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.tabs__content-box .tabs__content-box__heading_colored {
+  color: var(--desserts-tabs-content-text);
+}
+
+.tabs__content-box {
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.tabs__content-box .tabs__content-box__image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tabs__content-box .tabs__content-box__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.tabs__content-box {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .tabs__content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tabs__header__content_small {
+    font-size: 17px;
+  }
+
+  .tabs__header__content_big {
+    font-size: 41px;
+  }
+
+  .tabs__content .tabs__content-box {
+    font-size: 24px;
+
+  }
+
+}
+
+@media (min-width: 992px) {
+  .tabs__content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tabs__header__content_small {
+    font-size: 21px;
+  }
+
+  .tabs__header__content_big {
+    font-size: 48px;
+  }
+
+  .tabs__content .tabs__content-box {
+    font-size: 26px;
+  }
+}

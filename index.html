@@ -11,8 +11,10 @@
 </head>
 
 <body>
+
     <header class="header header__index">
-        <div class="header__main-block">
+        <div data-include="partials/header-hamburger.partial.html"></div>
+        <div class="header__main-block container">
             <nav data-include="partials/header.partial.html"></nav>
             <div class="header__title header__title--index">
                 <p class="header__welcome">Welcome to</p>
@@ -20,15 +22,21 @@
                 <p class="header__story">Handcrafting the most delicious ice cream since 1999.</p>
             </div>
             <div class="header__button-block">
-                <a href="#" class="header__about-cafe-button">
-                    <sapn>About Cafe</sapn>
-                </a>
-                <a href="#" class="header__our-menu-button">Our Menu</a>
+                
+                    <a href="#" class="header__about-cafe-button">
+                        About Cafe
+                    </a>
+                
+                    <a href="#" class="header__our-menu-button --link-button-first-style">
+                        Our Menu
+                    </a>
+                
             </div>
         </div>
     </header>
     <main>
         <div data-include="partials/booklets-menu.partial.html"></div>
+        <section data-include="partials/ice-cream-tastes.partials.html"></section>
         <section data-include="partials/tabs-menu.partial.html"></section>
         <div data-include="partials/ingredients.partial.html"></div>
         <div data-include="partials/our-gallery.partial.html"></div>
@@ -36,8 +44,8 @@
     </main>
 
     <footer data-include="partials/footer.partial.html"></footer>
-
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

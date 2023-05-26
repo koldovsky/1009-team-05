@@ -1,0 +1,12 @@
+.blog {
+    background-color: var(--booklets-menu-background);
+}
+.bice {
+    background-image: url(../images/blog/bice.png);
+}
+.bmanwoman  {
+    background-image: url(../images/blog/bmanwoman.png);
+}
+.bmango {
+    background-image: url(../images/blog/bmango.png);
+}

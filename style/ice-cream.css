@@ -1,0 +1,13 @@
+.main__ice-cream-tastes {
+    background-color: var(--booklets-menu-background);
+}
+
+.main__slaider-format {
+    border: 1px solid #27a556;
+    background-color: var(--link-button-second-style);
+    max-width: 671px;
+}
+
+.main__slaider {
+    margin: 0 24px;
+}

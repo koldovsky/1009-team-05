@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page | Ice Cream Cafe</title>
     <link rel="shortcut icon" href="images/header/icecream.png" type="images/x-icon">
-    <link rel="stylesheet" href="style/index.css">
-
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js" defer></script>
 </head>
 
 <body>
     <header class="header header__about-us">
-        <div class="header__main-block">
+        <div data-include="partials/header-hamburger.partial.html"></div>
+        <div class="header__main-block container">
             <nav data-include="partials/header.partial.html"></nav>
             <div class="header__title header__title--about-us">
-                <h2 class="header__on-about-us">About Us</h2>
+                <h1 class="header__on-about-us">About Us</h1>
             </div>
         </div>
     </header>
@@ -25,46 +27,62 @@
             <h2 class="about__content-introduction-title">
                 Our mission is to offer the best experience and the tastiest desserts & ice cream to our clients.
             </h2>
-            <p class="about__content-introduction-description">
-                We are Mr. Snowman, a small yet cozy NY cafe network. We have been handcrafting the most delicious ice
-                cream
-                since 1999, and these days, our menu is more varied than ever before.</p>
-            <p class="about__content-introduction-description">
-                Come to us to enjoy various ice cream flavors and try our seasonal and holiday desserts and cold drinks
-                like
-                iced coffee and milkshakes.</p>
-            <p class="about__content-introduction-description">
-                If you want to have a great time with friends or family, book a table in our cafe. Or pop into one of
-                our
-                little ice cream shops to take your favorite flavors with you.</p>
-            <p class="about__content-introduction-description">
-                We have a great network of 18+ ice cream shops, and their number is increasing. Also, you can find our
-                ice
-                cream on other cafes' menus.
-            </p>
+            <div>
+
+                <p class="about__content-introduction-description">
+                    We are Mr. Snowman, a small yet cozy NY cafe network. We have been handcrafting the most delicious
+                    ice
+                    cream
+                    since 1999, and these days, our menu is more varied than ever before.</p>
+                <p class="about__content-introduction-description">
+                    Come to us to enjoy various ice cream flavors and try our seasonal and holiday desserts and cold
+                    drinks
+                    like
+                    iced coffee and milkshakes.</p>
+            </div>
+            <div>
+                <p class="about__content-introduction-description">
+                    If you want to have a great time with friends or family, book a table in our cafe. Or pop into one
+                    of
+                    our
+                    little ice cream shops to take your favorite flavors with you.</p>
+                <p class="about__content-introduction-description">
+                    We have a great network of 18+ ice cream shops, and their number is increasing. Also, you can find
+                    our
+                    ice
+                    cream on other cafes' menus.
+                </p>
+            </div>
         </article>
         <section class="about__content-advantages">
             <div class="about__content-advantages-delicious">
-                <img width="40" src="images/about/delicious.svg" alt="about__content-advantages-delicious-picture">
-                <h3 class="about__content-advantages-delicious-title">Delicious Ice Cream</h3>
+                <div class="advantages-icon"><img width="40" src="images/about/delicious.svg" alt="about__content-advantages-delicious-picture"></div>
+                <h3 class="about__content-advantages-title">Delicious Ice Cream</h3>
                 <p class="about__content-advantages-delicious-description"> Dozens of types of ice cream made from
                     natural ingredients.</p>
             </div>
             <div class="about__content-advantages-atmosphere">
-                <img width="40" src="images/about/atmosphere.svg" alt="about__content-advantages-atmosphere-picture">
-                <h3 class="about__content-advantages-atmosphere-title">Cozy Atmosphere</h3>
+                <div class="advantages-icon">
+                    <img id="svg" width="40" src="images/about/atmosphere.svg"
+                        alt="about__content-advantages-atmosphere-picture">
+                </div>
+                <h3 class="about__content-advantages-title">Cozy Atmosphere</h3>
                 <p class="about__content-advantages-atmosphere-description"> Our cafe is excellent for meeting with
                     friends or family.</p>
             </div>
             <div class="about__content-advantages-reservation">
-                <img width="40" src="images/about/reservation.svg" alt="about__content-advantages-reservation-picture">
-                <h3 class="about__content-advantages-reservation-title">Table Reservation</h3>
+                <div class="advantages-icon">
+                    <img class="img" src="images/about/reservation.svg" alt="about__content-advantages-reservation-picture">
+                </div>
+                <h3 class="about__content-advantages-title">Table Reservation</h3>
                 <p class="about__content-advantages-reservation-description"> Dozens of types of ice cream made from
                     natural ingredients.</p>
             </div>
             <div class="about__content-advantages-desserts">
-                <img width="40" src="images/about/desserts.svg" alt="about__content-advantages-desserts-picture">
-                <h3 class="about__content-advantages-desserts-title">Top Desserts</h3>
+                <div class="advantages-icon">
+                    <img class="img" src="images/about/desserts.svg" alt="about__content-advantages-reservation-picture">
+                </div>
+                <h3 class="about__content-advantages-title">Top Desserts</h3>
                 <p class="about__content-advantages-desserts-description"> We offer not only ice cream but also many
                     tasty desserts with cream.</p>
             </div>
@@ -116,8 +134,6 @@
                     </div>
                     <p class="about__content-team-carousel-card-name">Jane Woss</p>
                 </div>
-
-            </div>
         </section>
         <section class="about__content-conclusion">
             <h2 class="about__content-conclusion-title">
@@ -160,23 +176,7 @@
         </section>
     </main>
     <footer data-include="partials/footer.partial.html"></footer>
-    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script class="accordion">
-        // Fetch all the details element.
-        const details = document.querySelectorAll("details");
 
-        // Add the onclick listeners.
-        details.forEach((targetDetail) => {
-            targetDetail.addEventListener("click", () => {
-                // Close all the details that are not targetDetail.
-                details.forEach((detail) => {
-                    if (detail !== targetDetail) {
-                        detail.removeAttribute("open");
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>

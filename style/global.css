@@ -2,9 +2,13 @@
 /* font-family: 'Dangrek', cursive; */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
 /* font-family: 'Source Sans 3', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+/* font-family: 'Leckerli One' */
+
 
 :root {
-    --main-text-color: white;
+    --title-text-color: #ffffff;
+    --main-text-color: rgb(224, 221, 221);
     --background-color-about: #b87390;
     --additional-color-about: #a55376;
 
@@ -13,13 +17,23 @@
 
     --background-color-contacts: #f8b83d;
     --additional-color-contacts: #ffc452;
-
+    
     --header-menu-link: 3px solid #912251;
 
-    --link-button-first-style: #ffc452; 
+    --link-button-first-style: #ffa800;
     --link-button-second-style: #32264b;
+    --link-button-third-style: #a55376;
+    --link-button-hover-style: #ff7938;
+    --color_shadow: #000000;
+    --drop-violet-shadow: 0px 4px 3px var(--color_shadow), 0px -4px 3px var(--color_shadow), -4px 0px 3px var(--color_shadow), 4px 0px 3px var(--color_shadow);
+    --white-color :#fff;
+    --transparent-color:#ffffff00;
 
-    --drop-violet-shadow: 0px 4px 3px #3f3255, 0px -4px 3px #3f3255, -4px 0px 3px #3f3255, 4px 0px 3px #3f3255;
+    --booklets-menu-background: #493b5f;
+
+    --desserts-tabs-background: #32264b;
+    --desserts-tabs-header: rgb(225,221,232);
+    --desserts-tabs-content-text: rgb(255,196,82);
 
     scroll-behavior: smooth;
 }
@@ -35,3 +49,8 @@ img {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+
+/* * {
+    border: 1px solid green;
+} */
