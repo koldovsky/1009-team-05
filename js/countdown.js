@@ -7,8 +7,10 @@ setInterval(function () {
     document.querySelector(".header__countdown-housr").innerHTML = timeFragment.hours;
     document.querySelector(".header__countdown-minutes").innerHTML = timeFragment.minutes;
     document.querySelector(".header__countdown-seconds").innerHTML = timeFragment.seconds;
-
 }, 1000);
+
+
+
 
 function convertMilliseconds(milliseconds) {
     const SECOND = 1000;
