@@ -272,6 +272,7 @@
 
 .main__booklets-menu {
     background-color: var(--booklets-menu-background);
+    position: relative;
 }
 
 .main__booklets-menu-container {
@@ -315,11 +316,37 @@
     background-image: url(../images/header/coffee.jpg);
 }
 
+.main__booklets-menu-section--drinks {
+    background-image: url(../images/header/drinks.jpg);
+}
+
+.main__booklets-menu-section--beer {
+    background-image: url(../images/header/beer.jpg);
+}
+
 .main__booklets-menu-deserts {
     margin: 32px 0;
     color: var(--white-color);
     font-size: 30px;
     text-shadow: var(--drop-violet-shadow);
+}
+
+.main__slider-navigation-button {
+    background-color: var(--background-color-contacts);
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+}
+
+#leftBtn {
+    left: 32px;
+}
+
+#rightBtn {
+    right: 32px;
 }
 
 .header__title-countdown {
