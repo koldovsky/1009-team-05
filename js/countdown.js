@@ -9,9 +9,6 @@ setInterval(function () {
     document.querySelector(".header__countdown-seconds").innerHTML = timeFragment.seconds;
 }, 1000);
 
-
-
-
 function convertMilliseconds(milliseconds) {
     const SECOND = 1000;
     const MINUTE = SECOND * 60;

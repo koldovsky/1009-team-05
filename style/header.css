@@ -274,10 +274,14 @@
     background-color: var(--booklets-menu-background);
 }
 
-.main__main-block-booklets-menu {
+.main__booklets-menu-container {
+    width: 330px;
+    overflow: hidden;
+}
+
+.main__booklets-menu-block {
+    width: 2310px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     color: var(--main-text-color);
 }
 
@@ -290,6 +294,7 @@
     border-radius: 10px;
     border: 1px solid var(--white-color);
     height: 463px;
+    width: 300px;
     margin: 15px;
     text-align: center;
 }
@@ -306,10 +311,15 @@
     background-image: url(../images/header/ice-cream.png);
 }
 
+.main__booklets-menu-section--coffee {
+    background-image: url(../images/header/coffee.jpg);
+}
+
 .main__booklets-menu-deserts {
     margin: 32px 0;
     color: var(--white-color);
     font-size: 30px;
+    text-shadow: var(--drop-violet-shadow);
 }
 
 .header__title-countdown {
@@ -341,13 +351,14 @@
 }
 
 @media(min-width: 767px) {
-    .main__main-block-booklets-menu {
-        flex-direction: row;
-        flex-wrap: wrap;
+    .main__booklets-menu-container {
+        width: 660px;
     }
 
-    .main__booklets-menu-section {
-        flex-basis: 45%;
+    .main__booklets-menu-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 }
 
@@ -362,11 +373,6 @@
 
     .header__main-hamburger-block {
         display: none !important;
-    }
-
-    .main__booklets-menu-section {
-        flex-basis: 30%;
-        flex-grow: 1;
     }
 
     .header__title {
@@ -408,5 +414,11 @@
 
     .header__menu {
         display: flex;
+    }
+}
+
+@media(min-width:1024px) {
+    .main__booklets-menu-container {
+        width: 990px;
     }
 }
