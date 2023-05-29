@@ -1,4 +1,5 @@
 .booklets-menu,
+.booklets-menu__title,
 .booklets-menu__list,
 .menu__item__name,
 .booklets-menu__item {
@@ -11,8 +12,17 @@
     object-fit: contain;
 }
 
+.booklets-menu__title,
 .booklets-menu {
     flex-direction: column;
+}
+
+.booklets-menu__title {
+    padding: 100px auto 50px;
+}
+
+.booklets-menu__table {
+    margin: 0 20px;
 }
 
 .menu__name,
