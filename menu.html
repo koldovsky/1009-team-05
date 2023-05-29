@@ -11,15 +11,7 @@
 </head>
 
 <body>
-    <header class="header header__menu-page">
-        <div data-include="partials/header-hamburger.partial.html"></div>
-        <div class="header__main-block container">
-            <nav data-include="partials/header.partial.html"></nav>
-            <div class="header__title header__title--menu">
-                <h2 class="header__on-menu">Our Menu</h2>
-            </div>
-        </div>
-    </header>
+    <header data-include="partials/header-menu.partial.html"></header>
     <main>
         <div class="booklets-menu">
             <section class="booklets-menu__section">
@@ -62,7 +54,9 @@
                 <div class="booklets-menu__list">
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
-                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__pic">
+                                <img class="item__pic" src="images/menu/desserts/chococream.png" alt="Choco Cream">
+                            </div>
                             <div class="menu__item__description">
                                 <div class="menu__item__name">Choco Cream<div class="item__line"></div>$11</div>
                                 <p class="menu__item__text">Biscuit, whipped cream, chocolate topping</p>
@@ -71,7 +65,9 @@
                     </div>
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
-                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__pic">
+                                <img class="item__pic" src="images/menu/desserts/tropic.png" alt="Tropical Day">
+                            </div>
                             <div class="menu__item__description">
                                 <div class="menu__item__name">Tropical Day<div class="item__line"></div>$18</div>
                                 <p class="menu__item__text">Lime ice cream, sliced kiwi and coconut, whipped cream</p>
@@ -89,7 +85,9 @@
                 <div class="booklets-menu__list">
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
-                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__pic">
+                                <img class="item__pic" src="images/menu/milkshakes/icelatte.png" alt="Iced Latte">
+                            </div>
                             <div class="menu__item__description">
                                 <div class="menu__item__name">Iced Latte<div class="item__line"></div>$10</div>
                                 <p class="menu__item__text">Espresso, sugar, whole milk, whipped cream, ice</p>
@@ -98,7 +96,9 @@
                     </div>
                     <div class="booklets-menu__table">
                         <div class="booklets-menu__item">
-                            <div class="menu__item__pic"></div>
+                            <div class="menu__item__pic">
+                                <img class="item__pic" src="images/menu/milkshakes/mangoshake.png" alt="Tropical Day">
+                            </div>
                             <div class="menu__item__description">
                                 <div class="menu__item__name">Mango Shake<div class="item__line"></div>$8</div>
                                 <p class="menu__item__text">Sliced mango, vanilla ice cream,  milk, mango syrup</p>
@@ -111,7 +111,7 @@
     </main>
     <footer></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,8 @@
-function show_hide_hamburger() {
-    var display_value = document.getElementById("hamburger-list").style.display
-    var body_overflow = document.getElementsByTagName("body");
-    if (display_value == "unset") {
-        document.getElementById("hamburger-list").style.display = "none";
-        body_overflow[0].style.overflow = "unset";
-    }
-    else {
-        document.getElementById("hamburger-list").style.display = "unset";
-        body_overflow[0].style.overflow = "hidden";
-    }
-}
+import { showHideHamburger } from './hamburger-menu.js';
+window.showHideHamburger = showHideHamburger;
+document.addEventListener('partialsLoaded', () => {
+    import('./countdown.js');
+    import('./slider.js');
+    import('./tabs-desserts.js');
+    import('./our-gallery-carousel.js');
+});

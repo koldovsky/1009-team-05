@@ -1,27 +1,31 @@
 @import "reset.css";
 @import "global.css";
 @import "header.css";
+@import "about_carousel.css";
 @import "footer.css";
 
 
 
-.header__title {
+.header__on-about-us {
     color: var(--title-text-color);
     font-family: 'Dangrek', cursive;
-
+    padding: 0px 0px 25px 0px;
 }
 
 .about__content {
     color: var(--title-text-color);
     background-color: var(--background-color-about);
-    padding: 90px 0 60px 0;
+    padding: 90px 15px 60px 15px;
     display: grid;
 
 }
 
-.about__content-advantages-title {
+
+.about__content-introduction-title {
     font-family: 'Dangrek', cursive;
-    font-size: 22px;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 15px 15px;
 }
 
 .about__content-introduction {
@@ -31,22 +35,18 @@
     font-size: 18px;
 }
 
-.about__content-introduction-title {
+.about__content-advantages-title {
     font-family: 'Dangrek', cursive;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 22px;
+    text-align: justify;
 }
 
-@media(min-width: 700px) {
-    .about__content {
-        padding: 100px 0 60px 0;
-    }
-
-    .about__content-introduction {
-        display: flex;
-        flex-direction: row;
-    }
+.about__content-advantages {
+    flex-direction: column;
 }
+
+
+
 
 p {
     font-family: 'Source Sans 3', sans-serif;
@@ -54,18 +54,9 @@ p {
 }
 
 .about__content-introduction-description {
-    padding: 15px 0;
+    padding: 15px 15px;
 }
 
-a.about__content-team-button {
-    appearance: button;
-    font-family: 'Dangrek', cursive;
-    text-decoration: none;
-    color: var(--main-text-color);
-    background-color: var(--additional-color-about);
-    padding: 12px;
-    border-radius: 20px;
-}
 
 .about__content-conclusion-faq {
     cursor: pointer;
@@ -95,6 +86,54 @@ a.about__content-team-button {
 .advantages-icon img {
     width: 26px;
     color: var(--main-text-color);
+}
+a.about__content-team-button {
+    appearance: button;
+    font-family: 'Dangrek', cursive;
+    text-decoration: none;
+    color: var(--main-text-color);
+    background-color: var(--additional-color-about);
+    padding: 12px;
+    border-radius: 20px;
+}
 
+@media(min-width: 320px) {
+    .header__on-about-us {
+        font-size: 34px;
+        padding: 70 0 100 0;
+    }
 
+}
+
+@media(min-width: 750px) {
+    .about__content {
+        padding: 100px 0 60px 0;
+    }
+
+    .header__on-about-us {
+        font-size: 41px;
+    }
+
+    .advantages-icon {
+        height: 70px;
+        width: 70px;
+    }
+    .advantages-icon img {
+        width: 40px;
+        color: var(--main-text-color);
+    }
+
+    .about__content-introduction,
+    .about__content-advantages {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media(min-width: 1000px) {
+    .header__on-about-us {
+        font-size: 48px;
+        padding: 70 0 100 0;
+    }
 }

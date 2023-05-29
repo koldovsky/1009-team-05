@@ -1,5 +1,5 @@
 .desserts {
-  padding: 0 24px;
+  padding: 0 24px 60px 24px;
 }
 
 .tabs__head {
@@ -27,10 +27,12 @@
   padding: 15px 20px;
   color: var(--main-text-color);
   font-family: 'Source Sans 3', sans-serif;
-  opacity: .6
+  opacity: .6;
+  background-color: transparent;
 }
 .tabs__heading:hover {
   opacity: 1;
+  cursor: pointer;
 }
 
 .tabs__header__content {
@@ -93,13 +95,29 @@
 .tabs__content-box .tabs__content-box__image img {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: contain;
   object-position: 50% 50%;
+  height: 73vh;
 }
 
 .tabs__content-box {
   width: 100%;
+}
+
+.tabs__heading.active {
+  position: relative;
+  opacity: 1;
+}
+
+.tabs__heading.active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #b87390;
 }
 
 @media (min-width: 768px) {
@@ -121,7 +139,9 @@
     font-size: 24px;
 
   }
-
+  .tabs__content-box .tabs__content-box__image img {
+    height: 45vh;
+  }
 }
 
 @media (min-width: 992px) {
@@ -139,5 +159,8 @@
 
   .tabs__content .tabs__content-box {
     font-size: 26px;
+  }
+  .tabs__content-box .tabs__content-box__image img {
+    height: 20vh;
   }
 }

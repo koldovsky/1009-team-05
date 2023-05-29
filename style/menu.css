@@ -1,3 +1,6 @@
+.booklets-menu,
+.booklets-menu__title,
+.booklets-menu__list,
 .menu__item__name,
 .booklets-menu__item {
     display: flex;
@@ -9,15 +12,35 @@
     object-fit: contain;
 }
 
+.booklets-menu__title,
+.booklets-menu {
+    flex-direction: column;
+}
+
+.booklets-menu__title {
+    padding: 100px auto 50px;
+}
+
+.booklets-menu__table {
+    margin: 0 20px;
+}
+
 .menu__name,
 .menu__item__name {
     font-weight: bold;
 }
 
-.menu__item__name .item__line {
+ .menu__item__name .item__line {
     flex: 1 0 0;
     height: 1px;
     background: var(--additional-color-menu);
     min-width: 10px;
     align-self: end;
+} 
+
+@media (max-width: 760px) {
+    .booklets-menu__list {
+        flex-direction: column;
+    }
 }
+

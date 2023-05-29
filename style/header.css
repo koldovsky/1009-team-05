@@ -8,10 +8,73 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 15;
+}
+
+.header__contacts-hamburger-block {
+    background-color: var(--additional-color-contacts);
+}
+
+.header__menu-hamburger-block {
+    background-color: var(--additional-color-menu);
+}
+
+.header__about-hamburger-block {
+    background-color: var(--additional-color-about);
 }
 
 .header__hamburger-transparent-block {
     height: 123px;
+}
+
+.header__hamburger-button {
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    z-index: 20;
+}
+
+.header__hamburger-button:hover .header__line-ham {
+    background-color: var(--link-button-hover-style);
+    transition: background-color;
+}
+
+.header__hamburger-button:hover .header__x-txt {
+    color: var(--link-button-hover-style);
+    transition: color;
+    cursor: default;
+}
+
+.header__hamburger-group-lines {
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    justify-content: space-around;
+    width: 36px;
+    overflow: hidden;
+}
+
+.header__line-ham {
+    width: 36px;
+    height: 3px;
+    background-color: var(--white-color);
+    transition: background-color 2s;
+}
+
+.header__x-ham {
+    font-family: monospace;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 43px;
+}
+
+.header__x-txt {
+    color: var(--white-color);
+    transition: color 2s;
 }
 
 .header__hamburger-navigation {
@@ -48,12 +111,13 @@
 .main__booklets-txt-link {
     color: var(--white-color);
     padding: 17px 37px;
-    background-color: var(--link-button-second-style);
     border-radius: 17px;
+    background-color: var(--link-button-second-style);
     transition: background-color 2s;
 }
 
-.main__booklets-txt-link:hover {
+.main__booklets-txt-link:hover,
+.main__slider-navigation-button:hover {
     background-color: var(--link-button-hover-style);
     transition: background-color;
 }
@@ -97,6 +161,7 @@
     background-size: cover;
     background-position-x: right;
     color: var(--white-color);
+    font-size: 32px;
 }
 
 .header__main-block {
@@ -106,16 +171,19 @@
 .header__about-us {
     background-color: var(--additional-color-about);
     color: var(--white-color);
+    font-size: 32px;
 }
 
 .header__menu-page {
     background-color: var(--additional-color-menu);
     color: var(--main-text-color);
+    font-size: 32px;
 }
 
 .header__contacts {
     background-color: var(--additional-color-contacts);
     color: var(--white-color);
+    font-size: 32px;
 }
 
 .header__nav {
@@ -125,11 +193,6 @@
 }
 
 .header__index-ref {
-    position: relative;
-    z-index: 20;
-}
-
-.header__hamburger-menu {
     position: relative;
     z-index: 20;
 }
@@ -145,7 +208,6 @@
 .header__title {
     margin: 111px auto 0px;
     text-align: center;
-    font-size: 34px;
 }
 
 .header__title--index {
@@ -175,8 +237,11 @@
 
 .header__button-block {
     display: flex;
-    justify-content: center;
+    font-size: 0.5em;
     flex-wrap: wrap;
+    justify-content: center;
+
+
 }
 
 .header__hamburger-txt-link:hover {
@@ -209,12 +274,17 @@
 
 .main__booklets-menu {
     background-color: var(--booklets-menu-background);
+    position: relative;
 }
 
-.main__main-block-booklets-menu {
+.main__booklets-menu-container {
+    width: 330px;
+    overflow: hidden;
+}
+
+.main__booklets-menu-block {
+    width: 2310px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     color: var(--main-text-color);
 }
 
@@ -227,6 +297,7 @@
     border-radius: 10px;
     border: 1px solid var(--white-color);
     height: 463px;
+    width: 300px;
     margin: 15px;
     text-align: center;
 }
@@ -243,29 +314,118 @@
     background-image: url(../images/header/ice-cream.png);
 }
 
+.main__booklets-menu-section--coffee {
+    background-image: url(../images/header/coffee.jpg);
+}
+
+.main__booklets-menu-section--drinks {
+    background-image: url(../images/header/drinks.jpg);
+}
+
+.main__booklets-menu-section--beer {
+    background-image: url(../images/header/beer.jpg);
+}
+
 .main__booklets-menu-deserts {
     margin: 32px 0;
     color: var(--white-color);
     font-size: 30px;
+    text-shadow: var(--drop-violet-shadow);
+}
+
+.main__slider-navigation-button {
+    border: 1px solid var(--white-color);
+    width: 50px;
+    height: 50px;
+    background-color: var(--link-button-second-style);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    transition: background-color 2s;
+}
+
+#scrollLeft {
+    left: 32px;
+}
+
+#scrollRight {
+    right: 32px;
+}
+
+.header__title-countdown {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: var(--drop-violet-shadow);
+}
+
+.header__countdown {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6em;
+    margin: 32px 0;
+}
+
+.header__countdown-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 345px;
+    width: 100%;
+}
+
+.header__countdown-time {
+    text-align: center;
+    background-color: var(--additional-color-about);
+    width: 64px;
+    height: 56px;
+    padding: 16px 0;
+    border-radius: 16px 16px 0 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--white-color) var(--white-color) transparent;
+}
+
+.header__countdown-time-txt {
+    width: 64px;
+    height: 38px;
+    text-align: center;
+    font-size: 0.7em;
+    background-color: var(--background-color-about);
+    padding: 10px 0;
+    border-radius: 0 0 16px 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent var(--white-color) var(--white-color);
+}
+
+.header__countdown-coll {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @media(min-width: 767px) {
-    .header__button-block {
-        justify-content: left;
+    .main__booklets-menu-container {
+        width: 660px;
     }
 
-    .main__main-block-booklets-menu {
+    .main__booklets-menu-block {
+        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .main__booklets-menu-section {
-        flex-basis: 45%;
+        flex-wrap: nowrap;
     }
 }
 
 @media(min-width:992px) {
-    .header__hamburger-menu {
+    .header__nav {
+        font-size: 0.5em;
+    }
+
+    .header__hamburger-button {
         display: none;
     }
 
@@ -273,25 +433,59 @@
         display: none !important;
     }
 
-    .main__booklets-menu-section {
-        flex-basis: 30%;
-        flex-grow: 1;
-    }
-
     .header__title {
         font-size: 2.5em;
+    }
+
+    .header__welcome {
+        font-size: 0.3em;
+    }
+
+    .header__owner {
+        font-size: 0.8em;
+    }
+
+    .header__story {
+        font-size: 0.2em;
     }
 
     .header__title--index {
         margin: 7vw 0;
     }
 
+    .header__title-countdown {
+        text-align: left;
+    }
+
+    .header__countdown {
+        align-items: flex-start;
+        font-size: 1em;
+    }
+
+    .header__countdown-container {
+    max-width: 555px;
+    }
+    .header__countdown-time {
+        width: 128px;
+        font-size: 1em;
+    }
+
+    .header__countdown-time-txt {
+        width: 128px;
+    }
+
     .header__button-block {
         margin: 7vw 0;
+        justify-content: left;
     }
 
     .header__menu {
         display: flex;
+    }
+}
 
+@media(min-width:1024px) {
+    .main__booklets-menu-container {
+        width: 990px;
     }
 }

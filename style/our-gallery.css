@@ -1,6 +1,62 @@
 .our-gallery__section {
     background-color: var(--booklets-menu-background);
 }
+
 .gallery-photo {
     background-color: var(--booklets-menu-background);
+}
+
+.galcarousel {
+    background-color: var(--booklets-menu-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galcarousel img {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+/* Styles for carousel buttons */
+.galcarousel {
+    position: relative;
+}
+
+.galcarousel button {
+   /* position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f8b83d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%; */
+    border: 1px solid var(--white-color);
+    width: 50px;
+    height: 50px;
+    background-color: var(--link-button-second-style);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    transition: background-color 2s;
+}
+
+.galcarousel .previous-button {
+    left: 10px;
+}
+
+.galcarousel .next-button {
+    right: 10px;
+}
+
+.galcarousel button:hover {
+    background-color: #ff7938;
+    color: #fff;
 }

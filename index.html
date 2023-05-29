@@ -11,29 +11,7 @@
 </head>
 
 <body>
-
-    <header class="header header__index">
-        <div data-include="partials/header-hamburger.partial.html"></div>
-        <div class="header__main-block container">
-            <nav data-include="partials/header.partial.html"></nav>
-            <div class="header__title header__title--index">
-                <p class="header__welcome">Welcome to</p>
-                <h2 class="header__owner">Mr. Snowman Cafe</h2>
-                <p class="header__story">Handcrafting the most delicious ice cream since 1999.</p>
-            </div>
-            <div class="header__button-block">
-                
-                    <a href="#" class="header__about-cafe-button">
-                        About Cafe
-                    </a>
-                
-                    <a href="#" class="header__our-menu-button --link-button-first-style">
-                        Our Menu
-                    </a>
-                
-            </div>
-        </div>
-    </header>
+    <header data-include="partials/header-index.partial.html"></header>
     <main>
         <div data-include="partials/booklets-menu.partial.html"></div>
         <section data-include="partials/ice-cream-tastes.partials.html"></section>
@@ -45,7 +23,8 @@
 
     <footer data-include="partials/footer.partial.html"></footer>
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="module" src="js/index.js"></script>
+   
 </body>
 
 </html>
