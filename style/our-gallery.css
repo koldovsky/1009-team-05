@@ -1,14 +1,52 @@
 .our-gallery__section {
     background-color: var(--booklets-menu-background);
 }
+
 .gallery-photo {
-       background-color: var(--booklets-menu-background);
-}
-/*
-.ourgallery__container {
     background-color: var(--booklets-menu-background);
-    background-size: cover;
-    padding-top: 140px;
-    padding-bottom: 150px;
-    display: block;
-  }
+}
+
+.galcarousel {
+    background-color: var(--booklets-menu-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galcarousel img {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+/* Styles for carousel buttons */
+.galcarousel {
+    position: relative;
+}
+
+.galcarousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f8b83d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.galcarousel .previous-button {
+    left: 10px;
+}
+
+.galcarousel .next-button {
+    right: 10px;
+}
+
+.galcarousel button:hover {
+    background-color: #ff7938;
+    color: #fff;
+}
