@@ -5,16 +5,16 @@ setInterval(function () {
     let timeFragment = convertMilliseconds(difference);
 
     document.querySelector(".header__countdown-days").innerHTML = timeFragment.days;
-    // document.querySelector(".header__countdown-days-txt").innerHTML = pluralizeDay(timeFragment.days);
+    document.querySelector(".header__countdown-days-txt").innerHTML = pluralizeTime(timeFragment.days, "day");
 
     document.querySelector(".header__countdown-housr").innerHTML = timeFragment.hours;
-    document.querySelector(".header__countdown-housr-txt").innerHTML = pluralizeTime(timeFragment.hours, "годин");
+    document.querySelector(".header__countdown-housr-txt").innerHTML = pluralizeTime(timeFragment.hours, "hour");
 
     document.querySelector(".header__countdown-minutes").innerHTML = timeFragment.minutes;
-    document.querySelector(".header__countdown-minutes-txt").innerHTML = pluralizeTime(timeFragment.minutes, "хвилин");
+    document.querySelector(".header__countdown-minutes-txt").innerHTML = pluralizeTime(timeFragment.minutes, "minute");
 
     document.querySelector(".header__countdown-seconds").innerHTML = timeFragment.seconds;
-    document.querySelector(".header__countdown-seconds-txt").innerHTML = pluralizeTime(timeFragment.seconds, "секунд");
+    document.querySelector(".header__countdown-seconds-txt").innerHTML = pluralizeTime(timeFragment.seconds, "second");
 
 }, 1000);
 
@@ -36,12 +36,4 @@ function convertMilliseconds(milliseconds) {
     };
 }
 
-let lastDigit = (inputDigit) => parseInt(inputDigit.charAt(inputDigit.length - 1));
-
-function pluralizeTime(seconds, timeTemplate) {
-    return `${timeTemplate}${seconds >= 5 && seconds <= 20 ? '' : lastDigit(seconds) >= 2 && lastDigit(seconds) <= 4 ? 'и' : lastDigit(seconds) === 1 ? 'a' : ''}`;
-}
-
-// function pluralizeDay(days) {
-//     return `${days} ${days >= 5 && days <= 20 ? 'днів' : lastDigit(days) >= 2 && lastDigit(days) <= 4 ? 'дні' : lastDigit(days) === 1 ? 'день' : 'днів'}`;
-// }
+let pluralizeTime = (seconds, timeTemplate) => `${timeTemplate}${parseInt(seconds) === 1 ? '' : 's'}`;
