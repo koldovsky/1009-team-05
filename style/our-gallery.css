@@ -2,5 +2,13 @@
     background-color: var(--booklets-menu-background);
 }
 .gallery-photo {
-    background-color: var(--booklets-menu-background);
+       background-color: var(--booklets-menu-background);
 }
+/*
+.ourgallery__container {
+    background-color: var(--booklets-menu-background);
+    background-size: cover;
+    padding-top: 140px;
+    padding-bottom: 150px;
+    display: block;
+  }

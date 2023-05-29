@@ -1,12 +1,38 @@
 .blog {
     background-color: var(--booklets-menu-background);
+
 }
+
 .bice {
     background-image: url(../images/blog/bice.png);
+  
 }
-.bmanwoman  {
+
+.bmanwoman {
     background-image: url(../images/blog/bmanwoman.png);
-}
+ }
+
 .bmango {
     background-image: url(../images/blog/bmango.png);
+   
+}
+
+.blog-section-header {
+
+    color: black;
+    font-family: 'Dangrek';
+    font-size: 26px;
+}
+
+.blog-paragraph {
+    font-size: 18px;
+    font-family: 'Source Sans 3', sans-serif;
+    color: black;
+}
+
+.text-button {
+    height: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
 }
