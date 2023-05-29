@@ -110,12 +110,12 @@
 .main__booklets-txt-link {
     color: var(--white-color);
     padding: 17px 37px;
-    background-color: var(--link-button-second-style);
     border-radius: 17px;
+    background-color: var(--link-button-second-style);
     transition: background-color 2s;
 }
 
-.main__booklets-txt-link:hover {
+.main__booklets-txt-link:hover, .main__slider-navigation-button:hover {
     background-color: var(--link-button-hover-style);
     transition: background-color;
 }
@@ -332,20 +332,23 @@
 }
 
 .main__slider-navigation-button {
-    background-color: var(--background-color-contacts);
-    padding: 16px;
+    border: 1px solid var(--white-color);
+    width: 50px;
+    height: 50px;
+    background-color: var(--link-button-second-style);
     border-radius: 50%;
-    font-size: 32px;
+    font-size: 16px;
     color: var(--white-color);
     position: absolute;
     top: 50%;
+    transition: background-color 2s;
 }
 
-#leftBtn {
+#scrollLeft {
     left: 32px;
 }
 
-#rightBtn {
+#scrollRight {
     right: 32px;
 }
 
