@@ -8,7 +8,7 @@ setInterval(function () {
     // document.querySelector(".header__countdown-days-txt").innerHTML = pluralizeDay(timeFragment.days);
 
     document.querySelector(".header__countdown-housr").innerHTML = timeFragment.hours;
-    document.querySelector(".header__countdown-housr-txt").innerHTML = pluralizeTime(timeFragment.minutes, "годин");
+    document.querySelector(".header__countdown-housr-txt").innerHTML = pluralizeTime(timeFragment.hours, "годин");
 
     document.querySelector(".header__countdown-minutes").innerHTML = timeFragment.minutes;
     document.querySelector(".header__countdown-minutes-txt").innerHTML = pluralizeTime(timeFragment.minutes, "хвилин");
@@ -36,7 +36,7 @@ function convertMilliseconds(milliseconds) {
     };
 }
 
-let lastDigit = (inputDigit) => inputDigit.length === 1 ? parseInt(inputDigit) : parseInt(inputDigit.charAt(inputDigit.length - 1));
+let lastDigit = (inputDigit) => parseInt(inputDigit.charAt(inputDigit.length - 1));
 
 function pluralizeTime(seconds, timeTemplate) {
     return `${timeTemplate}${seconds >= 5 && seconds <= 20 ? '' : lastDigit(seconds) >= 2 && lastDigit(seconds) <= 4 ? 'и' : lastDigit(seconds) === 1 ? 'a' : ''}`;

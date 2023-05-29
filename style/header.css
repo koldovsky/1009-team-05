@@ -61,7 +61,7 @@
 }
 
 .header__x-ham {
-    font-family: cursive, monospace;
+    font-family: monospace;
     width: 0px;
     height: 0px;
     overflow: hidden;
