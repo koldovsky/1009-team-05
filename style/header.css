@@ -208,6 +208,7 @@
 .header__title {
     margin: 111px auto 0px;
     text-align: center;
+    font-family: 'Dangrek', cursive;
 }
 
 .header__title--index {
