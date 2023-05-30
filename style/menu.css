@@ -1,3 +1,8 @@
+body {
+    background-color: var(--background-color-menu);
+    color: var(--title-text-color);
+}
+
 .booklets-menu,
 .booklets-menu__title,
 .booklets-menu__list,
@@ -80,8 +85,9 @@
     align-self: end;
 } 
 
-.item__line span:first-child {
+/* .item__line span:first-child {
     white-space: nowrap;
+} */
 
 @media (max-width: 760px) {
     .booklets-menu__list {
