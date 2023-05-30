@@ -277,9 +277,20 @@
     position: relative;
 }
 
+.main__slider-navigation-button-container {
+    width: 330px;
+    margin: auto;
+    position: relative;
+    top: 215px;
+}
+
 .main__booklets-menu-container {
     width: 330px;
     overflow: hidden;
+}
+
+#scrollRight {
+    right: 0px;
 }
 
 .main__booklets-menu-block {
@@ -346,14 +357,6 @@
     transition: background-color 2s;
 }
 
-#scrollLeft {
-    left: 32px;
-}
-
-#scrollRight {
-    right: 32px;
-}
-
 .header__title-countdown {
     font-size: 2em;
     text-align: center;
@@ -409,6 +412,8 @@
 }
 
 @media(min-width: 767px) {
+
+    .main__slider-navigation-button-container,
     .main__booklets-menu-container {
         width: 660px;
     }
@@ -463,8 +468,9 @@
     }
 
     .header__countdown-container {
-    max-width: 555px;
+        max-width: 555px;
     }
+
     .header__countdown-time {
         width: 128px;
         font-size: 1em;
@@ -485,6 +491,8 @@
 }
 
 @media(min-width:1024px) {
+
+    .main__slider-navigation-button-container,
     .main__booklets-menu-container {
         width: 990px;
     }
