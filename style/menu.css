@@ -1,15 +1,26 @@
+header {
+    font-family: ;
+}
+
 .booklets-menu,
 .booklets-menu__title,
 .booklets-menu__list,
-.menu__item__name,
-.booklets-menu__item {
+.menu__item__name {
     display: flex;
     align-items: center;
 }
 
+.booklets-menu__item {
+    display: flex;
+}
+
 .item__pic {
-    max-height: 65px;
+    height: 65px;
     object-fit: contain;
+}
+
+.menu__item__pic {
+    padding: 0 15px 0 0;
 }
 
 .booklets-menu__title,
@@ -18,29 +29,70 @@
 }
 
 .booklets-menu__title {
-    padding: 100px auto 50px;
+    padding: 100px 0 50px;
 }
 
 .booklets-menu__table {
     margin: 0 20px;
 }
 
+.booklets-menu__table .booklets-menu__item:not(:last-child) {
+    padding: 0 0 30px;
+}
+
+.menu__type {
+    font-family: Leckerli One;
+}
+
 .menu__name,
 .menu__item__name {
-    font-weight: bold;
+    font-family: Dangrek;
+}
+
+.menu__type,
+.menu__text {
+    font-size: min(max(18px, 4vw), 22px);
+}
+
+
+.menu__name {
+    font-size: min(max(35px, 4vw), 40px);
+}
+
+.menu__text {
+    font-size: min(max(19px, 4vw), 23px);
+}
+
+.menu__item__name {
+    font-size: min(max(19px, 4vw), 23px);
+}
+
+.menu__item__text {
+    font-size: min(max(16px, 4vw), 19px);
+    font-style: italic;
+}
+
+.booklets-menu__item {
+    max-width: 550px;
 }
 
  .menu__item__name .item__line {
     flex: 1 0 0;
     height: 1px;
     background: var(--additional-color-menu);
-    min-width: 10px;
+    width: fit-content;
     align-self: end;
 } 
+
+.item__line span:first-child {
+    white-space: nowrap;
 
 @media (max-width: 760px) {
     .booklets-menu__list {
         flex-direction: column;
     }
-}
 
+    .item__pic {
+        height: 55px;
+    }
+}
