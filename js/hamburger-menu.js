@@ -1,11 +1,11 @@
 let timeoutId;
 let blockedRunning = false;
-export function showHideHamburger() {
-    timeoutId = setTimeout(function () {
-        blockedRunning = false;
-    }, 600);
+const hamburgerButton = document.querySelector("#header__hamburger-button");
 
-    if (blockedRunning) { }
+function showHideHamburger() {
+    if (blockedRunning) {
+        return;
+    }
     else {
         blockedRunning = true;
         const calculateScrollBarWidth = () => window.innerWidth - document.documentElement.clientWidth;
@@ -44,5 +44,9 @@ export function showHideHamburger() {
             }, 550);
         }
     }
+    timeoutId = setTimeout(function () {
+        blockedRunning = false;
+    }, 1000);
 }
 
+hamburgerButton.addEventListener('click', showHideHamburger);
