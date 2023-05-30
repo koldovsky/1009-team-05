@@ -176,7 +176,7 @@
 
 .header__menu-page {
     background-color: var(--additional-color-menu);
-    color: var(--main-text-color);
+    color: var(--white-color);
     font-size: 32px;
 }
 

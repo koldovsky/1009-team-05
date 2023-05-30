@@ -1,5 +1,10 @@
 let timeoutId;
 let blockedRunning = false;
+const calculateScrollBarWidth = () => window.innerWidth - document.documentElement.clientWidth;
+const bodySelector = document.querySelector("body");
+const groupLines = document.querySelector(".header__hamburger-group-lines");
+const crossSign = document.querySelector(".header__x-ham");
+const hamburgerList = document.querySelector("#hamburger-list");
 const hamburgerButton = document.querySelector("#header__hamburger-button");
 
 function showHideHamburger() {
@@ -8,13 +13,6 @@ function showHideHamburger() {
     }
     else {
         blockedRunning = true;
-        const calculateScrollBarWidth = () => window.innerWidth - document.documentElement.clientWidth;
-        const bodySelector = document.querySelector("body");
-        const hamburgerButton = document.querySelector(".header__hamburger-button");
-        const groupLines = document.querySelector(".header__hamburger-group-lines");
-        const crossSign = document.querySelector(".header__x-ham");
-        const hamburgerList = document.querySelector("#hamburger-list");
-
         if (hamburgerList.style.display === "unset") {
             hamburgerButton.style.marginRight = "0px";
             hamburgerList.style.display = "none";
@@ -50,3 +48,4 @@ function showHideHamburger() {
 }
 
 hamburgerButton.addEventListener('click', showHideHamburger);
+hamburgerList.addEventListener('click', showHideHamburger)
