@@ -1,0 +1,33 @@
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    /* max-width: 1600px; */
+    margin: 0 auto;
+    gap: 30px;
+  }
+  @media (min-width: 500px) {
+    .footer__content-logo {
+     
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+    }}
+.footer__content-text__contacts-lower-fb:hover{color: blue;}
+.footer__content-text__contacts-lower-ins:hover{color: blue;}  
+.footer__content-text__contacts-lower-twit:hover{color: blue;}   
+.footer__content-text__contacts-lower-youtube:hover{color: blue;}
+
+
+      .footer__content-text__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+      
+      }
+
+
+      .footer__content-text__contacts-lower {
+        
+        color: rgb(255,196,82);
+      } 
