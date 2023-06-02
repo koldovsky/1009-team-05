@@ -7,10 +7,10 @@
 .footer__content-nav {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .footer__content {
-  align-content: space-between;
   padding-bottom: 100px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .footer__content-nav {
-  justify-content: center;
+  align-content: space-around;
 }
 
 @media (min-width: 760px) {
@@ -37,11 +37,10 @@
 
     .footer__content-logo {
       max-width: 250px;
-      margin: 25px 15px;
     }
 
     .footer__content-nav {
-
+      justify-content: space-around;
     }
 }
 
