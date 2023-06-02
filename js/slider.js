@@ -5,6 +5,7 @@ const mainBlockMenu = document.querySelector(".main__booklets-menu-block");
 const fullBookletWidth = 330;
 let isScrolling = false;
 let autoInterval;
+let lockInterval;
 let defaultDirectionScroll = "scrollRight";
 runScroll();
 
@@ -15,13 +16,15 @@ function handleButtonClick(currentId) {
     }
     isScrolling = true;
     currentId === "scrollLeft" ? (mainBlockContainer.scroll({ left: mainBlockContainer.scrollLeft - fullBookletWidth, behavior: "smooth", }), defaultDirectionScroll = "scrollLeft") : (mainBlockContainer.scroll({ left: fullBookletWidth + mainBlockContainer.scrollLeft, behavior: "smooth", }), defaultDirectionScroll = "scrollRight");
-    setTimeout(function () {
-        isScrolling = false;
-    }, 500);
+    unlockScrolling()
 }
 
 btnLeft.addEventListener('click', function () { handleButtonClick(this.id); });
 btnRight.addEventListener('click', function () { handleButtonClick(this.id); });
+window.addEventListener('scroll', function () {
+    isScrolling = true;
+    unlockScrolling();
+});
 
 function runScroll() {
     clearInterval(autoInterval);
@@ -44,4 +47,11 @@ function isScrollEnd() {
 function isScrollStart() {
     let isStart = mainBlockContainer.scrollLeft + mainBlockContainer.clientWidth === mainBlockContainer.clientWidth;
     return isStart;
+}
+
+function unlockScrolling() {
+    clearInterval(lockInterval);
+    lockInterval = setTimeout(function () {
+        isScrolling = false;
+    }, 500);
 }
