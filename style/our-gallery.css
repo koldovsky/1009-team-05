@@ -1,5 +1,6 @@
 .our-gallery__section {
     background-color: var(--booklets-menu-background);
+    padding-top: 60px;
 }
 
 .gallery-photo {
