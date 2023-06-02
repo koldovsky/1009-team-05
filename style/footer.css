@@ -3,7 +3,7 @@
     flex-direction: row;
     /* max-width: 1600px; */
     margin: 0 auto;
-    gap: 30px;
+    flex: 1;
   }
 
 .footer__content-nav {

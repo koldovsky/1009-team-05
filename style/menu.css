@@ -1,4 +1,4 @@
-body {
+.booklets-menu {
     background-color: var(--background-color-menu);
     color: var(--title-text-color);
 }
@@ -55,9 +55,9 @@ body {
     font-size: min(max(18px, 4vw), 22px);
 }
 
-
+.header__on-menu,
 .menu__name {
-    font-size: min(max(35px, 4vw), 40px);
+    font-size: min(max(35px, 4vw), 45px);
 }
 
 .menu__text {
@@ -65,11 +65,11 @@ body {
 }
 
 .menu__item__name {
-    font-size: min(max(19px, 4vw), 23px);
+    font-size: min(max(19px, 4vw), 25px);
 }
 
 .menu__item__text {
-    font-size: min(max(16px, 4vw), 19px);
+    font-size: min(max(15px, 4vw), 18px);
     font-style: italic;
 }
 
