@@ -22,7 +22,8 @@
 
 .footer__content-text__contacts-lower-svg {
   border-radius: 100%;
-}
+  color: rgb(255, 196, 82);}
+
 
 .footer__content-nav {
   align-content: space-around;
@@ -43,22 +44,16 @@
       justify-content: space-around;
     }
 }
+.footer__logo-txt {margin: 10px 5px;}
 
-/* .footer__content-text__contacts-lower-fb:hover{color: blue;}
-.footer__content-text__contacts-lower-ins:hover{color: blue;}  
-.footer__content-text__contacts-lower-twit:hover{color: blue;}   
-.footer__content-text__contacts-lower-youtube:hover{color: blue;} */
+.footer__content-logo{padding: 15px 15px;
+}
+.footer__column-title{font-size: 18px;
+  font-family: sans-serif ;
+  color: #fff;
+  margin: 10px 5px; }
 
-
-      /* .footer__content-text__contacts {
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
-      
-      } */
+.footer__row_text{color: rgb(255, 196, 82);}
 
 
-      /* .footer__content-text__contacts-lower {
-        
-        color: rgb(255,196,82);
-      }  */
+
