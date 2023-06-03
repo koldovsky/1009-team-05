@@ -4,7 +4,10 @@
 @import "about_carousel.css";
 @import "footer.css";
 
-
+* {
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
+}
 
 .header__on-about-us {
     color: var(--title-text-color);
@@ -16,7 +19,7 @@
     color: var(--title-text-color);
     background-color: var(--background-color-about);
     padding: 90px 15px 60px 15px;
-    display: grid;
+    /* display: grid; */
 
 }
 
@@ -26,6 +29,7 @@
     font-size: 30px;
     line-height: 40px;
     padding: 15px 15px;
+    text-align: left;
 }
 
 .about__content-introduction {
@@ -51,6 +55,7 @@
 p {
     font-family: 'Source Sans 3', sans-serif;
     color: var(--main-text-color);
+    font-size: 18px;
 }
 
 .about__content-introduction-description {
@@ -89,36 +94,87 @@ p {
 
 .about__content-video 
 {
-    background-image: url(images\about\background_for_video.png);
+    /* background-image: url(images\about\background_for_video.png); */
     display: flex;
     justify-content: center;
-    align-items: center;
     padding: 60px 0;
+    margin: 0 25px;
+}
+
+.about__content-video-local {
+    width: 100%;
+    
 }
 
 .about__content-team {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     justify-content: center;
     padding: 15px 0;
     margin: 0 25px;
 }
 
+.about__content-team-description {
+    width: 40%;
+}
+
 .about__content-team-description-staff{
     font-family: 'Leckerli One'
 }
+.about__content-team-description-title {
+    font-family: 'Dangrek', cursive;
+    font-size: 34px;
+}
 
+.about__content-team-description-description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    color: var(--additional-text-color);
+}
 
 a.about__content-team-button {
     appearance: button;
-    font-family: 'Dangrek', cursive;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16.5px;
     text-decoration: none;
-    color: var(--main-text-color);
+    color: var(--title-text-color);
     background-color: var(--additional-color-about);
-    padding: 12px;
-    border-radius: 20px;
+    padding: 30px;
+    border-radius: 40px;
 }
+
+.about__content-conclusion {
+    margin: 0 25px;
+}
+
+.about__content-conclusion-title{
+    font-family: 'Dangrek', cursive;
+    font-size: 30px;
+    padding: 15px 15px;
+    text-align: left;
+}
+
+.about__content-conclusion-description {
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+.about__content-conclusion-faq-question {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.about__content-conclusion-faq-answer {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: var(--title-text-color);
+}
+
 @media(min-width: 320px) {
     .header__on-about-us {
         font-size: 34px;
@@ -146,6 +202,8 @@ a.about__content-team-button {
         color: var(--main-text-color);
     }
 
+    
+   
     .about__content-introduction,
     .about__content-advantages,
     .about__content-introduction-description {
@@ -159,5 +217,16 @@ a.about__content-team-button {
     .header__on-about-us {
         font-size: 48px;
         padding: 70 0 100 0;
+    }
+    
+}
+
+@media (max-width: 750px) {
+    .about__content-team {
+        flex-direction: column;
+    }
+
+    .about__content-team-description {
+        width: 100%;
     }
 }

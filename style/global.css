@@ -9,6 +9,7 @@
 :root {
     --title-text-color: #ffffff;
     --main-text-color: rgb(224, 221, 221);
+    --additional-text-color: #f0f0f0;
     --background-color-about: #b87390;
     --additional-color-about: #a55376;
 
