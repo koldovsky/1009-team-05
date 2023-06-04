@@ -129,16 +129,29 @@
 
 .card-rectangle {
     position: absolute;
-    height: 260px;
+    height: 250px;
     width: 90%;
-    margin: 10px 60px;
+    margin: 10px 50px;
     background-color: var(--additional-color-menu);
 }
 
 .menu-img {
     z-index: 1;
-    max-height: 270px;
-    margin-bottom: 15px;
+}
+
+.img-height {
+    max-width: 340px;
+}
+
+.img-random {
+    position: relative;
+    top: 30px;
+    max-height: 220px;
+}
+
+.img-random:hover {
+    top: -10px;
+    max-height: 250px;
 }
 
 .menu-btn:hover {
