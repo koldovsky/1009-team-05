@@ -5,4 +5,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./tabs-desserts.js');
     import('./our-gallery-carousel.js');
     import('./ice-cream.js');
+    import('./menu.js');
 });
