@@ -6,4 +6,5 @@ document.addEventListener('partialsLoaded', () => {
     import('./our-gallery-carousel.js');
     import('./ice-cream.js');
     import('./menu.js');
+    import('./is-ready-state.js');
 });

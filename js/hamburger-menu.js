@@ -48,4 +48,4 @@ function showHideHamburger() {
 }
 
 hamburgerButton.addEventListener('click', showHideHamburger);
-hamburgerList.addEventListener('click', showHideHamburger)
+hamburgerList.addEventListener('click', showHideHamburger);

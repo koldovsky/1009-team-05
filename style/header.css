@@ -170,7 +170,7 @@
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: right;
+    background-position: bottom 0 right -187px;
     color: var(--white-color);
     font-size: 32px;
 }
