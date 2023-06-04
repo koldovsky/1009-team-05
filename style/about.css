@@ -5,7 +5,7 @@
 @import "footer.css";
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     box-sizing: border-box;
 
 }
@@ -37,7 +37,7 @@
     font-family: 'Dangrek', cursive;
     font-size: 30px;
     line-height: 40px;
-    padding: 15px 0 15px 0;
+    padding: 15px 10px 15px 0;
     text-align: left;
 
 }
@@ -105,25 +105,36 @@
 
 
 .about__content-video {
-    background-image: url(images\about\background_for_video.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     justify-content: center;
     padding: 60px 0;
-    margin: 0 25px;
+    margin: 0 50px;
+    position: relative;
+}
+
+.about__content-video-background{
+    background-image: url("/images/about/background_for_video.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -40px;
+    top: 0;
+    z-index: 1;
 }
 
 .about__content-video-local {
     width: 100%;
-
+    position: relative;
+    z-index: 2;
 }
 
 .about__content-team {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: start;
     justify-content: center;
     padding: 15px 0;
     margin: 0 25px;
@@ -183,15 +194,12 @@ a.about__content-team-button:hover {
 
 .about__content-conclusion-description {
     font-size: 18px;
-    margin: 30px;
-    padding: ;
-    
 }
 
 .about__content-conclusion-faq-question {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 18px;
-    text-align: justify;
+    /* text-align: justify; */
     font-weight: bold;
     margin: 0 0 10px 0;
 }
@@ -201,12 +209,63 @@ a.about__content-team-button:hover {
     font-size: 18px;
     text-align: justify;
     color: var(--title-text-color);
-    margin: 15px 0 15px 15px;
+    margin: 15px 0 15px 0;
 }
 
 .about__content-conclusion-faq {
-    margin: 15px 0 15px 0;
+    margin: 0 0 15px 0;
 }
+
+
+.about__content-conclusion-faq-accordion-item {
+    border-bottom: 1px solid var(--title-text-color-semi-transparent);
+    padding: 20px 0;
+    font-family: 'Source Sans 3', sans-serif;
+    user-select: none;
+}
+
+.about__content-conclusion-faq-accordion-item-question {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__content-conclusion-faq-accordion-item-answer {
+    display: none;
+    padding-top: 20px;
+}
+
+.about__content-conclusion-faq-accordion-item.active .about__content-conclusion-faq-accordion-item-answer {
+    display: block;
+}
+
+.about__content-conclusion-faq-accordion-item-icon::before {
+    content: '+';
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.about__content-conclusion-faq-accordion-item.active .about__content-conclusion-faq-accordion-item-icon::before {
+    content: '–';
+    transform: rotate(180deg);
+}
+
+.about__content-conclusion-faq-accordion-item-icon {
+    width: 30px;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: right;
+}
+
+.about__content-conclusion-faq-accordion-item:hover .about__content-conclusion-faq-accordion-item-icon {
+    opacity: 1;
+}
+
 
 @media(min-width: 320px) {
     .header__on-about-us {
@@ -236,7 +295,7 @@ a.about__content-team-button:hover {
     }
 
 
-    .about__content-conclusion,
+
     .about__content-introduction,
     .about__content-advantages,
     .about__content-introduction-description,
@@ -244,15 +303,25 @@ a.about__content-team-button:hover {
     .about__content-conclusion {
         display: flex;
         flex-direction: row;
-
     }
 
+    .about__content-conclusion {
+        gap: 2%;
+    }
+
+    .about__content-conclusion-title,
+    .about__content-conclusion-description,
+    .about__content-conclusion-faq-accordion {
+        width: 32%;
+    }
 }
+
+
 
 @media(min-width: 1000px) {
     .header__on-about-us {
         font-size: 48px;
-        padding: 70 0 100 0;
+        padding: 70px 0 100px 0;
     }
 
     .about__content-introduction,
