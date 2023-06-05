@@ -24,11 +24,25 @@
   text-align: center;
 }
 
-.footer__content-text__contacts-lower-svg {
-  border-radius: 100%;
-  color: rgb(255, 196, 82);
+.footer__content-text__contacts-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.footer__content-text__contacts-lower-svg {
+  border-radius: 0%;
+  color: rgb(255, 196, 82);
+  display: block;
+  width: 40px;
+}
+
+.block__svg {
+
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
 
 .footer__content-nav {
   font-size: 14px;
@@ -124,4 +138,18 @@
 .footer-copyright {
   text-align: center;
   padding: 25px 0;
+}
+
+
+
+.footerfc-ico-f {
+  fill: none;
+}
+
+.footerfc-ico-s {
+  fill: var(--additional-color-contacts);
+}
+
+.footer__fc-ico-t {
+  fill: var(--additional-color-contacts);
 }
