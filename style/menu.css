@@ -70,6 +70,11 @@
     font-family: Dangrek;
 }
 
+.menu__text,
+.menu__item__text {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
 .menu__type,
 .menu__text {
     font-size: min(max(18px, 4vw), 22px);

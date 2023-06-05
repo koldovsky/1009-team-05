@@ -1,6 +1,7 @@
 .footer {
   color: var(--white-color);
   background-color: var(--link-button-second-style);
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .footer-transition {
