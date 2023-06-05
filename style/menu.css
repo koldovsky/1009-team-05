@@ -66,23 +66,26 @@
 
 .menu__name,
 .menu__item__name,
-.game-title {
+.game-title,
+.menu-btn {
     font-family: Dangrek;
 }
 
 .menu__text,
-.menu__item__text {
+.menu__item__text,
+.title-press {
     font-family: 'Source Sans 3', sans-serif;
 }
 
 .menu__type,
-.menu__text {
+.menu__text,
+.title-press {
     font-size: min(max(18px, 4vw), 22px);
 }
 
 .header__on-menu,
 .menu__name,
-.game-title {
+.title-prop {
     font-size: min(max(35px, 4vw), 45px);
 }
 
@@ -113,7 +116,7 @@
 .menu-btn {
     cursor: pointer;
     padding: 1rem 2rem;
-    border-radius: 15px;
+    border-radius: 25px;
     color: var(--title-text-color);
     border: solid 4px var(--title-text-color);
     background-color: var(--additional-color-menu);
