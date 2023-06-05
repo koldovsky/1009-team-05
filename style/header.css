@@ -11,6 +11,11 @@
     z-index: 15;
 }
 
+.header__main-hamburger-block-toggle {
+    display: unset;
+    overflow: hidden;
+}
+
 .header__contacts-hamburger-block {
     background-color: var(--additional-color-contacts);
 }
@@ -33,6 +38,7 @@
     width: 36px;
     z-index: 20;
     cursor: pointer;
+    user-select: none;
 }
 
 .header__hamburger-button:hover .header__line-ham {
@@ -63,6 +69,13 @@
     justify-content: space-around;
     width: 36px;
     overflow: hidden;
+    transition: height 750ms 550ms, width 150ms 550ms;
+}
+
+.header__hamburger-group-lines-toggle {
+    height: 3px;
+    width: 0px;
+    transition: height 150ms, width 550ms;
 }
 
 .header__line-ham {
@@ -81,19 +94,18 @@
     justify-content: center;
     align-items: center;
     font-size: 43px;
+    transition: height 500ms, width 500ms;
+}
+
+.header__x-ham-toggle {
+    width: 36px;
+    height: 32px;
+    transition: 500ms 550ms;
 }
 
 .header__x-txt {
     color: var(--white-color);
     transition: color 2s;
-}
-
-.header__hamburger-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation-duration: 1s;
-    animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -106,6 +118,14 @@
         margin-left: 0vw;
         width: 100%;
     }
+}
+
+.header__hamburger-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 
 .header__hamburger-navigation-link-container,
@@ -424,9 +444,19 @@
 }
 
 @keyframes myborder {
-    from {border-color: var(--link-button-first-style);}
-    to {border-color: #493b5f;}
-  }
+    from {
+        border-color: var(--link-button-first-style);
+    }
+
+    to {
+        border-color: #493b5f;
+    }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
 
 @media(min-width: 767px) {
 
@@ -452,8 +482,10 @@
     }
 
     .header__main-hamburger-block {
-        display: none !important;
+        display: none;
+        overflow: auto;
     }
+
     .header__title {
         font-size: 2.5em;
     }
