@@ -1,9 +1,16 @@
-setInterval(function () {
-    let currentTime = new Date();
-    const deadLine = new Date("2023-06-06 10:10:10");
-    let difference = deadLine - currentTime;
-    let timeFragment = convertMilliseconds(difference);
+let openingTime = "2023-06-06 16:30:00";
+let headerCountdown = document.querySelector(".header__countdown");
+let timeFragment
+let countdownTimer;
 
+countdownTimer = setInterval(function () {
+    let currentTime = new Date();
+    const deadLine = new Date(openingTime);
+    let difference = deadLine - currentTime;
+    difference < 0 ? (headerCountdown.style.display = "none", clearInterval(countdownTimer)) : printTime(convertMilliseconds(difference));
+}, 1000);
+
+function printTime(timeFragment) {
     document.querySelector(".header__countdown-days").innerHTML = timeFragment.days;
     document.querySelector(".header__countdown-days-txt").innerHTML = pluralizeTime(timeFragment.days, "day");
 
@@ -15,8 +22,7 @@ setInterval(function () {
 
     document.querySelector(".header__countdown-seconds").innerHTML = timeFragment.seconds;
     document.querySelector(".header__countdown-seconds-txt").innerHTML = pluralizeTime(timeFragment.seconds, "second");
-
-}, 1000);
+}
 
 function convertMilliseconds(milliseconds) {
     const SECOND = 1000;

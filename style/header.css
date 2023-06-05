@@ -11,6 +11,11 @@
     z-index: 15;
 }
 
+.header__main-hamburger-block-toggle {
+    display: unset;
+    overflow: hidden;
+}
+
 .header__contacts-hamburger-block {
     background-color: var(--additional-color-contacts);
 }
@@ -32,6 +37,8 @@
     justify-content: center;
     width: 36px;
     z-index: 20;
+    cursor: pointer;
+    user-select: none;
 }
 
 .header__hamburger-button:hover .header__line-ham {
@@ -42,7 +49,17 @@
 .header__hamburger-button:hover .header__x-txt {
     color: var(--link-button-hover-style);
     transition: color;
-    cursor: default;
+    cursor: pointer;
+}
+
+.header__hamburger-button--contacts:hover .header__line-ham {
+    background-color: var(--white-color);
+    transition: color;
+}
+
+.header__hamburger-button--contacts:hover .header__x-txt {
+    color: var(--white-color);
+    transition: color;
 }
 
 .header__hamburger-group-lines {
@@ -52,6 +69,13 @@
     justify-content: space-around;
     width: 36px;
     overflow: hidden;
+    transition: height 750ms 550ms, width 150ms 550ms;
+}
+
+.header__hamburger-group-lines-toggle {
+    height: 3px;
+    width: 0px;
+    transition: height 150ms, width 550ms;
 }
 
 .header__line-ham {
@@ -70,19 +94,18 @@
     justify-content: center;
     align-items: center;
     font-size: 43px;
+    transition: height 500ms, width 500ms;
+}
+
+.header__x-ham-toggle {
+    width: 36px;
+    height: 32px;
+    transition: 500ms 550ms;
 }
 
 .header__x-txt {
     color: var(--white-color);
     transition: color 2s;
-}
-
-.header__hamburger-navigation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation-duration: 1s;
-    animation-name: slidein;
 }
 
 @keyframes slidein {
@@ -95,6 +118,14 @@
         margin-left: 0vw;
         width: 100%;
     }
+}
+
+.header__hamburger-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 
 .header__hamburger-navigation-link-container,
@@ -159,7 +190,7 @@
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: right;
+    background-position: bottom 0 right -187px;
     color: var(--white-color);
     font-size: 32px;
 }
@@ -176,7 +207,7 @@
 
 .header__menu-page {
     background-color: var(--additional-color-menu);
-    color: var(--main-text-color);
+    color: var(--white-color);
     font-size: 32px;
 }
 
@@ -190,6 +221,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: sans-serif;
 }
 
 .header__index-ref {
@@ -202,12 +234,13 @@
 }
 
 .header__menu-cell {
-    padding: 18px;
+    padding: 5px;
 }
 
 .header__title {
     margin: 111px auto 0px;
     text-align: center;
+    font-family: 'Dangrek', cursive;
 }
 
 .header__title--index {
@@ -275,11 +308,23 @@
 .main__booklets-menu {
     background-color: var(--booklets-menu-background);
     position: relative;
+    padding: 0 0 100px;
+}
+
+.main__slider-navigation-button-container {
+    width: 330px;
+    margin: auto;
+    position: relative;
+    top: 215px;
 }
 
 .main__booklets-menu-container {
     width: 330px;
     overflow: hidden;
+}
+
+#scrollRight {
+    right: 0px;
 }
 
 .main__booklets-menu-block {
@@ -346,14 +391,6 @@
     transition: background-color 2s;
 }
 
-#scrollLeft {
-    left: 32px;
-}
-
-#scrollRight {
-    right: 32px;
-}
-
 .header__title-countdown {
     font-size: 2em;
     text-align: center;
@@ -381,23 +418,16 @@
     width: 64px;
     height: 56px;
     padding: 16px 0;
-    border-radius: 16px 16px 0 0;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--white-color) var(--white-color) transparent;
 }
 
 .header__countdown-time-txt {
     width: 64px;
-    height: 38px;
+    height: 56px;
     text-align: center;
     font-size: 0.7em;
     background-color: var(--background-color-about);
     padding: 10px 0;
-    border-radius: 0 0 16px 16px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: transparent var(--white-color) var(--white-color);
+
 }
 
 .header__countdown-coll {
@@ -406,9 +436,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 2px solid;
+    border-color: var(--link-button-first-style);
+    border-radius: 16px;
+    overflow: hidden;
+    animation: myborder 2s infinite alternate;
+}
+
+@keyframes myborder {
+    from {
+        border-color: var(--link-button-first-style);
+    }
+
+    to {
+        border-color: #493b5f;
+    }
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
 }
 
 @media(min-width: 767px) {
+
+    .main__slider-navigation-button-container,
     .main__booklets-menu-container {
         width: 660px;
     }
@@ -430,7 +482,8 @@
     }
 
     .header__main-hamburger-block {
-        display: none !important;
+        display: none;
+        overflow: auto;
     }
 
     .header__title {
@@ -463,8 +516,9 @@
     }
 
     .header__countdown-container {
-    max-width: 555px;
+        max-width: 555px;
     }
+
     .header__countdown-time {
         width: 128px;
         font-size: 1em;
@@ -485,6 +539,8 @@
 }
 
 @media(min-width:1024px) {
+
+    .main__slider-navigation-button-container,
     .main__booklets-menu-container {
         width: 990px;
     }

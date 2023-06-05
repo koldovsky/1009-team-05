@@ -1,38 +1,70 @@
 .blog {
-    background-color: var(--booklets-menu-background);
-
-}
-
-.bice {
-    background-image: url(../images/blog/bice.png);
-  
-}
-
-.bmanwoman {
-    background-image: url(../images/blog/bmanwoman.png);
- }
-
-.bmango {
-    background-image: url(../images/blog/bmango.png);
-   
+  background-color: var(--booklets-menu-background);
+padding-top: 60px;
 }
 
 .blog-section-header {
 
-    color: black;
-    font-family: 'Dangrek';
-    font-size: 26px;
+  color: #fff;
+  font-family: 'Dangrek';
+  font-size: 26px;
 }
 
 .blog-paragraph {
-    font-size: 18px;
-    font-family: 'Source Sans 3', sans-serif;
-    color: black;
+  font-size: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--main-text-color);
 }
 
-.text-button {
-    height: 100%;
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: column;
+.product-cards {
+  background-color: var(--booklets-menu-background);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.product-card {
+  width: 500px; 
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.learn-more-button {
+  margin-top: 25px;
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 16px 32px;
+  display: inline-block;
+  background-color: var(--link-button-second-style);
+  transition: background-color 1s;
+  border-radius: 28px;
+
+}
+
+.learn-more-button:hover {
+  background-color: var(--link-button-third-style);
+  transition: background-color;
 }

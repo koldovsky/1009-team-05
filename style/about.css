@@ -4,7 +4,11 @@
 @import "about_carousel.css";
 @import "footer.css";
 
+* {
+    /* outline: 1px solid red; */
+    box-sizing: border-box;
 
+}
 
 .header__on-about-us {
     color: var(--title-text-color);
@@ -16,7 +20,15 @@
     color: var(--title-text-color);
     background-color: var(--background-color-about);
     padding: 90px 15px 60px 15px;
-    display: grid;
+
+}
+
+
+.about__content-introduction {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin: 0 25px;
 
 }
 
@@ -25,46 +37,47 @@
     font-family: 'Dangrek', cursive;
     font-size: 30px;
     line-height: 40px;
-    padding: 15px 15px;
+    padding: 15px 10px 15px 0;
+    text-align: left;
+
 }
 
-.about__content-introduction {
+.about__content-introduction-description {
+    padding: 15px 25px 15px 0;
 
-    margin: 0 25px;
+}
+
+.about__content-advantages {
+    display: flex;
     flex-direction: column;
-    font-size: 18px;
+    margin: 0 25px;
 }
 
 .about__content-advantages-title {
     font-family: 'Dangrek', cursive;
     font-size: 22px;
     text-align: justify;
+
 }
 
-.about__content-advantages {
-    flex-direction: column;
+.about__content-advantages-description {
+    padding: 15px 25px 30px 0;
+    text-align: justify;
 }
 
-
-
-
-p {
+.about__content p {
     font-family: 'Source Sans 3', sans-serif;
     color: var(--main-text-color);
-}
+    font-size: 18px;
+    text-align: justify;
 
-.about__content-introduction-description {
-    padding: 15px 15px;
 }
-
 
 .about__content-conclusion-faq {
     cursor: pointer;
 }
 
-.about__content-video {
-    background-image: url("images/about/background_for_video.png");
-}
+
 
 .about__content-advantages {
     display: flex;
@@ -81,21 +94,178 @@ p {
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin: 15px 0 15px 0;
 }
 
 .advantages-icon img {
     width: 26px;
     color: var(--main-text-color);
 }
+
+
+
+.about__content-video {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    margin: 0 50px;
+    position: relative;
+}
+
+.about__content-video-background{
+    background-image: url("/images/about/background_for_video.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -40px;
+    top: 0;
+    z-index: 1;
+}
+
+.about__content-video-local {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.about__content-team {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding: 15px 0;
+    margin: 0 25px;
+}
+
+.about__content-team-description {
+    padding: 0 25px 0 0;
+    width: 40%;
+    text-align: justify;
+}
+
+.about__content-team-description-staff {
+    font-family: 'Leckerli One'
+}
+
+.about__content-team-description-title {
+    font-family: 'Dangrek', cursive;
+    font-size: 34px;
+}
+
+.about__content-team-description-description {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 20px;
+    color: var(--additional-text-color);
+    padding: 25px 0 25px 0;
+}
+
 a.about__content-team-button {
     appearance: button;
-    font-family: 'Dangrek', cursive;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 16.5px;
     text-decoration: none;
-    color: var(--main-text-color);
+    color: var(--title-text-color);
     background-color: var(--additional-color-about);
-    padding: 12px;
-    border-radius: 20px;
+    padding: 15px 35px 15px 35px;
+    border-radius: 40px;
+    margin: 35px 0 35px 0;
 }
+
+a.about__content-team-button:hover {
+    background-color: var(--additional-button-color-about);
+}
+
+.about__content-conclusion {
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.about__content-conclusion-title {
+    font-family: 'Dangrek', cursive;
+    font-size: 30px;
+    text-align: left;
+}
+
+.about__content-conclusion-description {
+    font-size: 18px;
+}
+
+.about__content-conclusion-faq-question {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    /* text-align: justify; */
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.about__content-conclusion-faq-answer {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    color: var(--title-text-color);
+    margin: 15px 0 15px 0;
+}
+
+.about__content-conclusion-faq {
+    margin: 0 0 15px 0;
+}
+
+
+.about__content-conclusion-faq-accordion-item {
+    border-bottom: 1px solid var(--title-text-color-semi-transparent);
+    padding: 20px 0;
+    font-family: 'Source Sans 3', sans-serif;
+    user-select: none;
+}
+
+.about__content-conclusion-faq-accordion-item-question {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__content-conclusion-faq-accordion-item-answer {
+    display: none;
+    padding-top: 20px;
+}
+
+.about__content-conclusion-faq-accordion-item.active .about__content-conclusion-faq-accordion-item-answer {
+    display: block;
+}
+
+.about__content-conclusion-faq-accordion-item-icon::before {
+    content: '+';
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+}
+
+.about__content-conclusion-faq-accordion-item.active .about__content-conclusion-faq-accordion-item-icon::before {
+    content: '–';
+    transform: rotate(180deg);
+}
+
+.about__content-conclusion-faq-accordion-item-icon {
+    width: 30px;
+    font-size: 30px;
+    opacity: 0.8;
+    text-align: right;
+}
+
+.about__content-conclusion-faq-accordion-item:hover .about__content-conclusion-faq-accordion-item-icon {
+    opacity: 1;
+}
+
 
 @media(min-width: 320px) {
     .header__on-about-us {
@@ -118,22 +288,58 @@ a.about__content-team-button {
         height: 70px;
         width: 70px;
     }
+
     .advantages-icon img {
         width: 40px;
         color: var(--main-text-color);
     }
 
+
+
     .about__content-introduction,
-    .about__content-advantages {
+    .about__content-advantages,
+    .about__content-introduction-description,
+    .about__content-team,
+    .about__content-conclusion {
         display: flex;
         flex-direction: row;
     }
 
+    .about__content-conclusion {
+        gap: 2%;
+    }
+
+    .about__content-conclusion-title,
+    .about__content-conclusion-description,
+    .about__content-conclusion-faq-accordion {
+        width: 32%;
+    }
 }
+
+
 
 @media(min-width: 1000px) {
     .header__on-about-us {
         font-size: 48px;
-        padding: 70 0 100 0;
+        padding: 70px 0 100px 0;
+    }
+
+    .about__content-introduction,
+    .about__content-advantages,
+    .about__content-video,
+    .about__content-team,
+    .about__content-conclusion {
+        margin: 0 80px;
+    }
+}
+
+@media (max-width: 750px) {
+    .about__content-team {
+        flex-direction: column;
+
+    }
+
+    .about__content-team-description {
+        width: 100%;
     }
 }

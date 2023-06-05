@@ -55,8 +55,8 @@
                             </svg>
                         </div>
                         <div class="info__underIcon">Email</div>
-                        <div class="info__description">mr.snowman@email.com
-                            mr.snowmanbook@email.com</div>
+                        <div class="info__description"><a href="#" class="info__link">mr.snowman@email.com</a>
+                            <a href="#" class="info__link">mr.snowmanbook@email.com</a></div>
                     </div>
                     <div class="info__card">
                         <div class="info__icon">
@@ -90,7 +90,7 @@
                                             style=""></path>
                                         <polygon fill="currentColor"
                                             points="253.099,126 243.69,126 223.395,264.06 222.4,272.617 229.432,278.22 367.856,380.532     373.028,375.215 255.5,256   "
-                                            style=""></polygon>
+                                            style=""></polygon>m
                                     </g>
                                 </g>
                             </svg>
@@ -102,31 +102,33 @@
                     </div>
                 </div>
                 <div class="main__section">
-
-                    <div class="main__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10170.453508748347!2d-74.0132364114468!3d40.724754087398544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c41edbcf7%3A0x5e47a0728e2f9b4b!2zMTc2IFNwcmluZyBTdCwgTmV3IFlvcmssIE5ZIDEwMDEyLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1684179297501!5m2!1suk!2sua"
-                            width="570" height="714" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                    <div class="main__map__wrapper">
+                        <div class="main__map modalform">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10170.453508748347!2d-74.0132364114468!3d40.724754087398544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598c41edbcf7%3A0x5e47a0728e2f9b4b!2zMTc2IFNwcmluZyBTdCwgTmV3IFlvcmssIE5ZIDEwMDEyLCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1684179297501!5m2!1suk!2sua"
+                                width="100%" height="714" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    <div class="main__modalform modalform">
-                        <div class="modalform__header">
-                            <div class="modalform__title">Hit Us Up!</div>
-                            <div class="modalform__subtitle">Fill out the form below and we'll contact you as soon as we
-                                can.</div>
-                        </div>
-                        <div class="modalform__info">
-                            <div class="modalform__inputs"><input type="text" placeholder="Your Name*"></div>
-                            <div class="modalform__inputs"><input type="phone" placeholder="Phone number*"></div>
-                            <div class="modalform__inputs"><input type="email" placeholder="Email*"></div>
-                            <div class="modalform__inputs"><input type="text" placeholder="Type your message"></div>
-                        </div>
-                        <div class="modalform__button">
-                            <div class="button__wrapper">
-                                <button type="submit">Send a Message</button>
+                        <div class="main__modalform modalform">
+                            <div class="modalform__header">
+                                <div class="modalform__title">Hit Us Up!</div>
+                                <div class="modalform__subtitle">Fill out the form below and we'll contact you as soon as we
+                                    can.</div>
+                            </div>
+                            <div class="modalform__info">
+                                <div class="modalform__inputs"><input type="text" placeholder="Your Name*"></div>
+                                <div class="modalform__inputs"><input type="phone" placeholder="Phone number*"></div>
+                                <div class="modalform__inputs"><input type="email" placeholder="Email*"></div>
+                                <div class="modalform__inputs"><input type="text" placeholder="Type your message"></div>
+                            </div>
+                            <div class="modalform__button ">
+                                <div class="button__wrapper">
+                                    <button type="submit">Send a Message</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                 </div>
             </div>
@@ -144,7 +146,7 @@
     </div>
 
     <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/contacts.js"></script>
 </body>
 
 </html>

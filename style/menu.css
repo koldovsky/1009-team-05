@@ -1,40 +1,176 @@
+.main__menu {
+    color: var(--title-text-color);
+    background-color: var(--background-color-menu);
+}
+
+.booklets-menu,
+.game__menu {  
+    padding-bottom: 150px;
+}
+
 .booklets-menu,
 .booklets-menu__title,
 .booklets-menu__list,
 .menu__item__name,
-.booklets-menu__item {
+.game__menu {
     display: flex;
     align-items: center;
 }
 
+.booklets-menu__item,
+.booklets-menu__table {
+    display: flex;
+}
+
+.booklets-menu__item {
+    height: 105px;
+}
+
 .item__pic {
     max-height: 65px;
+    min-width: 65px;
     object-fit: contain;
 }
 
+.menu__item__pic {
+    margin-right: 15px;
+}
+
+.menu__item__description {
+    width: 100%;
+}
+
 .booklets-menu__title,
-.booklets-menu {
+.booklets-menu__table,
+.booklets-menu,
+.game__menu {
     flex-direction: column;
 }
 
 .booklets-menu__title {
-    padding: 100px auto 50px;
+    padding: 100px 0 50px;
 }
 
 .booklets-menu__table {
-    margin: 0 20px;
+    margin: 15px 25px;
+    width: 100%;
+}
+
+.booklets-menu__table .booklets-menu__item:not(:last-child) {
+    padding: 0 0 30px;
+}
+
+.menu__type {
+    font-family: Leckerli One;
 }
 
 .menu__name,
+.menu__item__name,
+.game-title,
+.menu-btn {
+    font-family: Dangrek;
+}
+
+.menu__text,
+.menu__item__text,
+.title-press {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.menu__type,
+.menu__text,
+.title-press {
+    font-size: min(max(18px, 4vw), 22px);
+}
+
+.header__on-menu,
+.menu__name,
+.title-prop {
+    font-size: min(max(35px, 4vw), 45px);
+}
+
+.menu__text,
+.menu-btn {
+    font-size: min(max(19px, 4vw), 23px);
+}
+
 .menu__item__name {
-    font-weight: bold;
+    font-size: min(max(19px, 4vw), 25px);
+}
+
+.menu__item__text {
+    font-size: min(max(15px, 4vw), 18px);
+    font-style: italic;
+}
+
+.menu__text,
+.game-title {
+    text-align: center;
+    width: 75%;
+}
+
+.game-title {
+    padding-bottom: 50px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    color: var(--title-text-color);
+    border: solid 4px var(--title-text-color);
+    background-color: var(--additional-color-menu);
+}
+
+.game-card {
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px; 
+    height: 400px;
+    padding-top: 20px;
+    background-color: var(--title-text-color);
+    box-shadow: var(--additional-color-menu) 0px 6px 12px -2px, var(--additional-color-menu) 0px 3px 7px -3px;
+}
+
+.card-rectangle {
+    position: absolute;
+    height: 250px;
+    width: 90%;
+    margin: 10px 50px;
+    background-color: var(--additional-color-menu);
+}
+
+.menu-img {
+    z-index: 1;
+}
+
+.img-height {
+    max-width: 340px;
+}
+
+.img-random {
+    position: relative;
+    top: 30px;
+    max-height: 220px;
+}
+
+.img-random:hover {
+    top: -10px;
+    max-height: 250px;
+}
+
+.menu-btn:hover {
+    border: solid 5px var(--title-text-color);
 }
 
  .menu__item__name .item__line {
     flex: 1 0 0;
     height: 1px;
     background: var(--additional-color-menu);
-    min-width: 10px;
+    width: fit-content;
     align-self: end;
 } 
 
@@ -42,5 +178,16 @@
     .booklets-menu__list {
         flex-direction: column;
     }
-}
 
+    .item__pic {
+        height: 55px;
+    }
+
+    .game__menu {
+        max-width: 100%;
+    }
+
+    .booklets-menu__item {
+        margin: 0 15px;
+    }
+}
