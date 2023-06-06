@@ -68,3 +68,9 @@ padding-top: 60px;
   background-color: var(--link-button-third-style);
   transition: background-color;
 }
+
+@media(min-width: 1200px) {
+  .product-cards {
+    flex-wrap: nowrap;
+  }
+}

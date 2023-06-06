@@ -2,7 +2,9 @@
     background-color: var(--booklets-menu-background);
     padding-top: 60px;
 }
-
+.galcarousel__section {
+    background-color: var(--booklets-menu-background);
+}
 .gallery-photo {
     background-color: var(--booklets-menu-background);
 }
@@ -17,7 +19,6 @@
 
 .galcarousel img {
     width: 600px;
-    height: 400px;
     margin-bottom: 10px;
     justify-content: space-between;
 }
