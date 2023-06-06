@@ -190,7 +190,7 @@
     background-image: url("../images/header/header-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom 0 right -187px;
+    background-position: center;
     color: var(--white-color);
     font-size: 32px;
 }
@@ -454,6 +454,7 @@
 }
 
 .stop-scrolling {
+    height: 100%;
     overflow: hidden;
 }
 
